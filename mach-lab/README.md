@@ -17,5 +17,5 @@
 
 | Ad-Soyad | Yetki Bitiş Tarihi | Mesai İçinde | Mesai Dışında | Malzeme Dolabı | Özel Dolap |
 |---------:|--------------------|--------------|---------------|----------------|------------|
-|          |                    |              |               |                |            |
+| Hande Bayazıt | 04/09/2021    |       Var    |    Var        |   Var          |  Yok       |
 
