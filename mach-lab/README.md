@@ -20,3 +20,5 @@
 | Hande Bayazıt | 04/09/2021    |       Var    |    Var        |   Var          |  Yok       |
 | Hakan Polat | 04/09/2021    |       Var    |    Var        |   Var          |  Yok       |
 | Özgür Yazıcı | 31/12/2021   |       Var    |    Var        |   Var          |  Yok       |
+| Siamak P. | 31/12/2021   |       Var    |    Var        |   Var          |  Yok       |
+| Gökhan Çakal | 31/12/2020   |       Var    |    Var        |   Var          |  Yok       |
