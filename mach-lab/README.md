@@ -17,11 +17,12 @@
 
 |      Ad-Soyad    | Yetki Bitiş Tarihi| Mesai İçinde | Mesai Dışında | Malzeme Dolabı | Özel Dolap |
 |:-----------------|:---------------:|:--------------:|:-------------:|:--------------:|:----------:|
-| Hande Bayazıt    | 04/09/2021 |       Var    |   Var+Anahtar |   Var          |  Yok       |
-| Hakan Polat      | 04/09/2021 |       Var    |   Var+Anahtar |   Var          |  Yok       |
-| Özgür Yazıcı     | 31/12/2021 |       Var    |    Var        |   Var          |  Yok       |
-| Siamak P.        | 31/12/2021 |       Var    |    Var        |   Var          |  Yok       |
-| Gökhan Çakal     | 31/12/2020 |       Var    |    Var        |   Var          |  Yok       |
-| Furkan Karakaya  | 31/12/2020 |       Var    |    Var        |   Var          |  Var(No:R-7B)   |
-| Emre Karabakla   | 21/06/2020 |       Var    |    Var        |   Yok          |  Yok       |
-| M. Zeki Yırtar   | 30/09/2020 |      :heavy_check_mark:   |   :heavy_check_mark:        |   :no_entry:   |  :no_entry:      |
+| Hande Bayazıt    | 04/09/2021 |:heavy_check_mark:|:heavy_check_mark: + :key: |:heavy_check_mark: |  :no_entry:    |
+| Hakan Polat      | 04/09/2021 |:heavy_check_mark:|:heavy_check_mark: + key:  |:heavy_check_mark: |  :no_entry:   |
+| Özgür Yazıcı     | 31/12/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:     |
+| Siamak P.        | 31/12/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:  |
+| Gökhan Çakal     | 31/12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:       |
+| Furkan Karakaya  | 31/12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :key: (R-7B)   |
+| Emre Karabakla   | 21/06/2020 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:       |  :no_entry:       |
+| M. Zeki Yırtar   | 30/09/2020 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:       | :no_entry:|
+| Furkan Tokgöz    | 30/09/2022 |:heavy_check_mark:|:heavy_check_mark: | :heavy_check_mark: | :no_entry:|
