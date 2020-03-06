@@ -24,4 +24,4 @@
 | Gökhan Çakal     | 31/12/2020 |       Var    |    Var        |   Var          |  Yok       |
 | Furkan Karakaya  | 31/12/2020 |       Var    |    Var        |   Var          |  Var(No:R-7B)   |
 | Emre Karabakla   | 21/06/2020 |       Var    |    Var        |   Yok          |  Yok       |
-| M. Zeki Yırtar   | 30/09/2020 |       Var    |    Var        |   Yok          |  Yok       |
+| M. Zeki Yırtar   | 30/09/2020 |      :heavy_check_mark:   |   :heavy_check_mark:        |   :no_entry:   |  :no_entry:      |
