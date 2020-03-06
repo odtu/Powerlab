@@ -24,3 +24,4 @@
 | Gökhan Çakal  | 31/12/2020   |       Var    |    Var        |   Var          |  Yok       |
 | Furkan Karakaya  | 31/12/2020|       Var    |    Var        |   Var          |  Var(No:?)   |
 | Emre Karabakla  | 21/06/2020|       Var    |    Var        |   Yok          |  Yok   |
+| Mehmet Zeki Yırtar | 30/09/2020|       Var    |    Var        |   Yok          |  Yok   |
