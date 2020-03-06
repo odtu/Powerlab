@@ -18,7 +18,7 @@
 |      Ad-Soyad    | Yetki Bitiş Tarihi| Mesai İçinde | Mesai Dışında | Malzeme Dolabı | Özel Dolap |
 |:-----------------|:---------------:|:--------------:|:-------------:|:--------------:|:----------:|
 | Hande Bayazıt    | 04/09/2021 |:heavy_check_mark:|:heavy_check_mark: + :key: |:heavy_check_mark: |  :no_entry:    |
-| Hakan Polat      | 04/09/2021 |:heavy_check_mark:|:heavy_check_mark: + key:  |:heavy_check_mark: |  :no_entry:   |
+| Hakan Polat      | 04/09/2021 |:heavy_check_mark:|:heavy_check_mark: + :key:  |:heavy_check_mark: |  :no_entry:   |
 | Özgür Yazıcı     | 31/12/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:     |
 | Siamak P.        | 31/12/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:  |
 | Gökhan Çakal     | 31/12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:       |
