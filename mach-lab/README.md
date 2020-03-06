@@ -22,6 +22,6 @@
 | Özgür Yazıcı  | 31/12/2021   |       Var    |    Var        |   Var          |  Yok       |
 | Siamak P.     | 31/12/2021   |       Var    |    Var        |   Var          |  Yok       |
 | Gökhan Çakal  | 31/12/2020   |       Var    |    Var        |   Var          |  Yok       |
-| Furkan Karakaya  | 31/12/2020|       Var    |    Var        |   Var          |  Var(No:?)   |
+| Furkan Karakaya  | 31/12/2020|       Var    |    Var        |   Var          |  Var(No:R-7B)   |
 | Emre Karabakla  | 21/06/2020|       Var    |    Var        |   Yok          |  Yok   |
 | Mehmet Zeki Yırtar | 30/09/2020|       Var    |    Var        |   Yok          |  Yok   |
