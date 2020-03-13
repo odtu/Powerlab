@@ -28,3 +28,4 @@
 | Furkan Tokgöz    | 09/2022 |:heavy_check_mark:|:heavy_check_mark: | :heavy_check_mark: | :no_entry:|
 | İlker Şahin      | 03/2021 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :key: (W)|
 | Mesut Uğur       | 03/2022 |:heavy_check_mark:|:heavy_check_mark: | :heavy_check_mark: | :key: (R-7A)|
+| Özgür Gülsuna    | 06/2022 |:heavy_check_mark:|:no_entry: | :no_entry: | :no_entry:|
