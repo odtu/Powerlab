@@ -20,7 +20,6 @@
 | Hande Bayazıt    | 09/2021 |:heavy_check_mark:|:heavy_check_mark: + :key: |:heavy_check_mark: |  :no_entry:    |
 | Hakan Polat      | 09/2021 |:heavy_check_mark:|:heavy_check_mark: + :key:  |:heavy_check_mark: |  :no_entry:   |
 | Özgür Yazıcı     | 12/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:     |
-| Siamak P.        | 12/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:  |
 | Gökhan Çakal     | 12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:       |
 | Furkan Karakaya  | 12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :key: (R-7B)   |
 | Emre Karabakla   | 06/2020 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:       |  :no_entry:       |
@@ -32,3 +31,4 @@
 |Mohammad Mokhtare | 06/2024 |:heavy_check_mark:|:no_entry: | :no_entry: | :no_entry:|
 | Enes Ayaz     | 06/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:|  
 | Serhat Özküçük    | 03/2022 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:|  
+| Hakan Saraç   | 09/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:|  
