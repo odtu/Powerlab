@@ -32,3 +32,4 @@
 | Enes Ayaz     | 06/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:|  
 | Serhat Özküçük    | 03/2022 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:|  
 | Hakan Saraç   | 09/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:|  
+| Ogün Altun  | 09/2023 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:|  
