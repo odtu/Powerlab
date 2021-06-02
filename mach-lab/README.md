@@ -22,7 +22,7 @@
 | Özgür Yazıcı     | 12/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:     |
 | Gökhan Çakal     | 12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:       |
 | Furkan Karakaya  | 12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :key: (R-7B)   |
-| Emre Karabakla   | 06/2020 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:       |  :no_entry:       |
+| Emre Karabakla   | 06/2020 |:heavy_check_mark:|:heavy_check_mark: |  :key:      |  :no_entry:       |
 | M. Zeki Yırtar   | 09/2020 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:       | :no_entry:|
 | Furkan Tokgöz    | 09/2022 |:heavy_check_mark:|:heavy_check_mark: | :heavy_check_mark: | :no_entry:|
 | İlker Şahin      | 03/2021 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :key: (W)|
