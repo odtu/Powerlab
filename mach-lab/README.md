@@ -4,12 +4,12 @@
 
 - Danışman hocanızla izin gerekliliği ve kapsamı konuşulur.
 - Bu klasörde bulunan yetki formu iki nüsha şeklinde düzenlenir.
-- Gerekli imzalar tamamlandıktan sonra, bu nüshalardan birisi laboratuvar teknisyenine (Bünyamin Bostan) teslim edilir. Diğer kopya ise kullanıcı tarafından saklanır.
-- Form teslimi sonrası laboratuvar sorumlusu hoca tarafından öğrenci kart yetkilendirme işlemi için mail atılır, ve kilit dolabı şifresi paylaşılır. 
+- Gerekli imzalar tamamlandıktan sonra, bu nüshalardan birisi laboratuvar teknisyenlerine (Mehmet Ali Can veya Bünyamin Bostan) teslim edilir. Diğer kopya ise kullanıcı tarafından saklanır.
+- Form teslimi sonrası laboratuvar sorumlusu hoca tarafından öğrenci kart yetkilendirme işlemi için mail atılır, ve gerekiyorsa kilit dolabı şifresi paylaşılır. 
 - Aşağıda bulunan erişim yetkisi tablosuna gerekli eklemeler yapılır.
 - Dolap anahtarları ve laboratuvar kapı anahtarları lab teknisyeni tarafından sağlanır.
 - Daha sonra laboratuvar teknisyeni ve laboratuvar sorumlusu araştırma görevlisi tarafından gerekli bilgilendirmeler yapılır.
-- Bu bilgilendirmeler sonrası labo yetkili hocasına lab eğitiminin alındığına dair bilgi verilir.
+- Bu bilgilendirmeler sonrası lab yetkili hocasına lab eğitiminin alındığına dair bilgi verilir.
 
 
 # Erişim Listesi
@@ -21,10 +21,9 @@
 | Hakan Polat      | 09/2021 |:heavy_check_mark:|:heavy_check_mark: + :key:  |:heavy_check_mark: |  :no_entry:   |
 | Özgür Yazıcı     | 12/2021 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:     |
 | Gökhan Çakal     | 12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:       |
-| Furkan Karakaya  | 12/2020 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :key: (R-7B)   |
 | Emre Karabakla   | 06/2023 |:heavy_check_mark:|:heavy_check_mark: |  :key:      |  :no_entry:       |
 | M. Zeki Yırtar   | 09/2020 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:       | :no_entry:|
-| Furkan Tokgöz    | 09/2022 |:heavy_check_mark:|:heavy_check_mark: | :heavy_check_mark: | :no_entry:|
+| Furkan Tokgöz    | 09/2022 |:heavy_check_mark:|:heavy_check_mark: | :heavy_check_mark: | :key: (R-7B) |
 | İlker Şahin      | 03/2021 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :key: (W)|
 | Mesut Uğur       | 03/2022 |:heavy_check_mark:|:heavy_check_mark: | :heavy_check_mark: | :key: (R-7A)|
 | Özgür Gülsuna    | 06/2022 |:heavy_check_mark:|:no_entry: | :no_entry: | :no_entry:|
@@ -35,3 +34,5 @@
 | Ogün Altun  | 09/2023 |:heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |  :no_entry:|  
 | Paul Brown  | 03/2023 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|
 |Soheil Pouraltafi-kheljan  | 06/2022 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
+|Işık Emir Altunkol | 12/2021 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
+|Mümtaz Can Kıldır  | 12/2021 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
