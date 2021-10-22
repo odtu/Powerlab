@@ -5,15 +5,13 @@
 - Danışman hocanızla izin gerekliliği ve kapsamı konuşulur.
 - Bu klasörde bulunan yetki formu iki nüsha şeklinde düzenlenir.
 - Gerekli imzalar tamamlandıktan sonra, bu nüshalardan birisi laboratuvar teknisyenlerine (Mehmet Ali Can veya Bünyamin Bostan) teslim edilir. Diğer kopya ise kullanıcı tarafından saklanır.
-- Form teslimi sonrası laboratuvar sorumlusu hoca tarafından öğrenci kart yetkilendirme işlemi için mail atılır, ve gerekiyorsa kilit dolabı şifresi paylaşılır. 
+- Form teslimi sonrası laboratuvar sorumlusu hoca tarafından öğrenci kart yetkilendirme işlemi için mail atılır, ve gerekiyorsa kilit dolabı şifresi paylaşılır, malzeme dolap anahtarı verilir. 
 - Aşağıda bulunan erişim yetkisi tablosuna gerekli eklemeler yapılır.
-- Dolap anahtarları ve laboratuvar kapı anahtarları lab teknisyeni tarafından sağlanır.
-- Daha sonra laboratuvar teknisyeni ve laboratuvar sorumlusu araştırma görevlisi tarafından gerekli bilgilendirmeler yapılır.
+- İzin formunun bir nüshasının laboratuvar teknisyenine teslim edilmesinden sonra, teknisyeni ve laboratuvar sorumlusu araştırma görevlisi tarafından laboratuvar kullanımı konusunda gerekli bilgilendirmeler yapılır.
 - Bu bilgilendirmeler sonrası lab yetkili hocasına lab eğitiminin alındığına dair bilgi verilir.
 
 
 # Erişim Listesi
-
 
 |      Ad-Soyad    | Yetki Bitiş Tarihi| Mesai İçinde | Mesai Dışında | Malzeme Dolabı | Özel Dolap |
 |:-----------------|:---------------:|:--------------:|:-------------:|:--------------:|:----------:|
