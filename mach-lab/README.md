@@ -32,4 +32,4 @@
 |Mümtaz Can Kıldır  | 12/2021 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
 |Muhammet Samet Yakut  | 10/2022 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:| 
 |Yunus Çay  | 10/2023 |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :no_entry:| 
-|Serhat Emir Ogan  | 10/2023 |:heavy_check_mark:|:heavy_check_mark:  | :no_entry:  |  :no_entry:| 
+|Serhat Emir Ogan  | 10/2023 |:heavy_check_mark:|:heavy_check_mark:  | :key: |  :no_entry:| 
