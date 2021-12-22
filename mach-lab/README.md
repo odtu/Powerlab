@@ -33,3 +33,4 @@
 |Muhammet Samet Yakut  | 10/2022 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:| 
 |Yunus Çay  | 10/2023 |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :no_entry:| 
 |Serhat Emir Ogan  | 10/2023 |:heavy_check_mark:|:heavy_check_mark:  | :key: |  :no_entry:| 
+|Osman Yücel  | 06/2022 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:| 
