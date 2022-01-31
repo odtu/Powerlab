@@ -22,7 +22,7 @@
 | İlker Şahin      | 03/2021 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :key: (W)|
 | Mesut Uğur       | 03/2022 |:heavy_check_mark:|:heavy_check_mark: |  :key:   | :key: (R-7A)|
 | Özgür Gülsuna    | 06/2022 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :no_entry:|
-|Mohammad Mokhtare | 06/2024 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :no_entry:|
+|Mohammad Mokhtare | 06/2024 |:heavy_check_mark:|:heavy_check_mark: | :key:   | :no_entry:|
 | Enes Ayaz     | 06/2021 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:|  
 | Serhat Özküçük    | 03/2022 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:|  
 | Hakan Saraç   | 09/2021 |:heavy_check_mark:|:heavy_check_mark: |  :key:  |  :no_entry:|  
