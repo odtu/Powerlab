@@ -28,3 +28,4 @@
 |Berkay Sağlam  | 06/2023 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:| 
 |Öztürk Şahin Alemdar| 06/2024 |:heavy_check_mark:|:heavy_check_mark: |  :key:   | :key: (R-7A)|
 |Erdem Canaz | 03/2023 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Kemal Parlaktuna | 03/2025 |:heavy_check_mark:| :no_entry:   |  :no_entry:    | :no_entry:|
