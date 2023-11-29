@@ -28,4 +28,5 @@
 |Yusuf Basri Yılmaz| 03/2026 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Kemal Parlaktuna | 03/2025 |:heavy_check_mark:| :no_entry:   |  :no_entry:    | :no_entry:|
 |Mohammad Derogarian| 03/2025 |:heavy_check_mark:| :heavy_check_mark:   |  :no_entry:    | :no_entry:|
-|İsmail Macit| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Ali Belli| 10/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Ahmetcan Akuz| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
