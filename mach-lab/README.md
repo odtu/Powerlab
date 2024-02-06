@@ -15,14 +15,13 @@
 
 |      Ad-Soyad    | Yetki Bitiş Tarihi| Mesai İçinde | Mesai Dışında | Malzeme Dolabı | Özel Dolap |
 |:-----------------|:---------------:|:--------------:|:-------------:|:--------------:|:----------:|
-| Özgür Yazıcı     | 12/2021 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:     |
-| Özgür Gülsuna    | 06/2022 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :no_entry:|
-|Mohammad Mokhtare | 06/2024 |:heavy_check_mark:|:heavy_check_mark: | :key:   | :no_entry:|
-| Ogün Altun  | 09/2023 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:|  
-|Işık Emir Altunkol | 12/2023 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
-|Muhammet Samet Yakut  | 10/2024 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:| 
-|Yunus Çay  | 10/2023 |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :no_entry:| 
-|Öztürk Şahin Alemdar| 06/2024 |:heavy_check_mark:|:heavy_check_mark: |  :key:   | :key: (R-7A)|
+| Özgür Gülsuna    | 06/2025 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :no_entry:|
+|Mohammad Mokhtare | 06/2025 |:heavy_check_mark:|:heavy_check_mark: | :key:   | :no_entry:|
+| Ogün Altun  | 09/2025 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:|  
+|Işık Emir Altunkol | 12/2025 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
+|Muhammet Samet Yakut  | 10/2025 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:| 
+|Yunus Çay  | 10/2025 |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :no_entry:| 
+|Öztürk Şahin Alemdar| 06/2025 |:heavy_check_mark:|:heavy_check_mark: |  :key:   | :key: (R-7A)|
 |Erdem Canaz | 03/2024 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Barış Kuseyri | 03/2026 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Yusuf Basri Yılmaz| 03/2026 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
@@ -30,3 +29,4 @@
 |Mohammad Derogarian| 03/2025 |:heavy_check_mark:| :heavy_check_mark:   |  :no_entry:    | :no_entry:|
 |Ali Belli| 10/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Ahmetcan Akuz| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Mustafa Burak Çoruk| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
