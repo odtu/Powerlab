@@ -30,3 +30,4 @@
 |Ali Belli| 10/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Ahmetcan Akuz| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Mustafa Burak Çoruk| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
+|Tugay Gül| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
