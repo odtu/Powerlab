@@ -20,7 +20,7 @@
 | Ogün Altun  | 09/2025 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:|  
 |Işık Emir Altunkol | 12/2025 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
 |Muhammet Samet Yakut  | 10/2025 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:| 
-|Yunus Çay  | 10/2025 |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :no_entry:| 
+|Yunus Çay  | 10/2025 |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :key: (26)| 
 |Öztürk Şahin Alemdar| 06/2025 |:heavy_check_mark:|:heavy_check_mark: |  :key:   | :key: (R-7A)|
 |Erdem Canaz | 03/2024 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Barış Kuseyri | 03/2026 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
