@@ -15,7 +15,7 @@
 
 |      Ad-Soyad    | Yetki Bitiş Tarihi| Mesai İçinde | Mesai Dışında | Malzeme Dolabı | Özel Dolap |
 |:-----------------|:---------------:|:--------------:|:-------------:|:--------------:|:----------:|
-| Özgür Gülsuna    | 06/2025 |:heavy_check_mark:|:heavy_check_mark: | :no_entry: | :no_entry:|
+| Özgür Gülsuna    | 06/2025 |:heavy_check_mark:|:heavy_check_mark: |  :key: |  :key:|
 |Mohammad Mokhtare | 06/2025 |:heavy_check_mark:|:heavy_check_mark: | :key:   | :no_entry:|
 | Ogün Altun  | 09/2025 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:|  
 |Işık Emir Altunkol | 12/2025 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
@@ -31,3 +31,4 @@
 |Ahmetcan Akuz| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Mustafa Burak Çoruk| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
 |Tugay Gül| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
+|İsmail Macit| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
