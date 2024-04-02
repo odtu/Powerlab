@@ -32,3 +32,4 @@
 |Mustafa Burak Çoruk| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
 |Tugay Gül| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
 |İsmail Macit| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Göktuğ Tonay| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :heavy_check_mark:   | :no_entry:|
