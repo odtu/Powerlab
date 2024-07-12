@@ -12,7 +12,7 @@ You can fix it with this steps:
 
 #### For HAL NAS: (for Qnap 4.1.x and Up Firmware)  
 
-    # hal_app –se_sys_set_mac obj_index=0,value=00:08:9B:12:34:56
+    # hal_app -–se_sys_set_mac obj_index=0,value=00:08:9B:12:34:56
 
 > **Note:** obj_index is the LAN interface number, 0=LAN1, 1=LAN2, etc…
 
