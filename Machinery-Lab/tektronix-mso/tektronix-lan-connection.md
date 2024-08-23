@@ -23,7 +23,7 @@ Network drives were introduced in firmware version 1.8.7 for 5 Series, 5 Series 
 	- <img src="figures/mount.png" alt="mount" style="width:60%;"/>
 9) Choose what drive letter to use for the network drive.  This selection does not matter other than for personal organization.
 10) Choose whether to identify the host computer by Name or IP.  This example will use IP.  Enter the IP address identified in Step 6.
-11) Enter the network path FOLLOWING the host computer’s name from the Network Path identified in step 4.  For instance, if the network path is “\\PC-BEAV-HQRGNQ2\mso”, then the Path should be set to “mso”.  This field does not require any preceding slashes, colons, or drive letters, even if a hostname is used instead of an IP address.
+11) Enter the network path FOLLOWING the host computer’s name from the Network Path identified in step 4.  For instance, if the network path is “\\PC-BEAV-HQRGNQ2\Desktop\mso”, then the Path should be set to “Desktop\mso”.  This field does not require any preceding slashes, colons, or drive letters, even if a hostname is used instead of an IP address.
 12) Enter a valid User Name and Password for a user that has access to the shared drive.  Click OK to mount the drive.
 	- <img src="figures/settings.png" alt="settings" style="width:30%;"/>
 13) If the user, password or domain/workgroup results in an error you can try couple of things in host computer side.
