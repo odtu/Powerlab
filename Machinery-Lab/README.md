@@ -22,7 +22,6 @@
 |Muhammet Samet Yakut  | 10/2025 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:| 
 |Yunus Çay  | 10/2025 |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :key: (26)| 
 |Öztürk Şahin Alemdar| 06/2025 |:heavy_check_mark:|:heavy_check_mark: |  :key:   | :key: (R-7A)|
-|Erdem Canaz | 03/2024 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Barış Kuseyri | 03/2026 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Yusuf Basri Yılmaz| 03/2026 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Kemal Parlaktuna | 03/2025 |:heavy_check_mark:| :no_entry:   |  :no_entry:    | :no_entry:|
@@ -34,3 +33,4 @@
 |İsmail Macit| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Göktuğ Tonay| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :heavy_check_mark:   | :no_entry:|
 |Arda Kasım| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Kaan Demirkoparan | 10/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
