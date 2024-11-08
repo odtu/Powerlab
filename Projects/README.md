@@ -5,7 +5,6 @@
 
 |      Ad-Soyad    | W#45|
 |:-----------------|:---------------:|
-
 | [Ahmetcan Akuz](https://github.com/ahmetcan-akuz)    | :+1: |
 | [Ogün Altun](https://github.com/ogunaltun)    | :+1: |
 | [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :+1: |
@@ -23,6 +22,8 @@
 
 
 ## Undergrads
+|      Ad-Soyad    | W#45|
+|:-----------------|:---------------:|
 | [Aytunç Evlice](https://github.com/aytunc-evlice)    | :+1: |
 | [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :+1: |
 | [Metin Özdemir](https://github.com/metinozdemir01)    | :+1: |
