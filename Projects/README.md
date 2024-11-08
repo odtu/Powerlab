@@ -32,3 +32,14 @@
 | []()    | :+1: |
 
 
+## Active Projects
+
+- [Vitesco Projects](https://github.com/odtu/VITESCO-METU)
+- [Cycloid Motor](https://github.com/odtu/Cycloid-Integrated-Robotic-Actuator)
+- [Lab on a Lap](https://github.com/odtu/lab-on-a-lap)
+- [PCB Hub Motor](https://github.com/odtu/PCB-Hub-Motor)
+- [Three Coil WPT](https://github.com/odtu/Three-Coil-Concurrent-WPT)
+- []()
+- []()
+- []()
+
