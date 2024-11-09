@@ -39,7 +39,7 @@
 - [Lab on a Lap](https://github.com/odtu/lab-on-a-lap)
 - [PCB Hub Motor](https://github.com/odtu/PCB-Hub-Motor)
 - [Three Coil WPT](https://github.com/odtu/Three-Coil-Concurrent-WPT)
-- []()
+- [3 Phase Inverters](https://github.com/ahmetcan-akuz/3-Phase-Inverters)
 - []()
 - []()
 
