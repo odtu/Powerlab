@@ -29,7 +29,7 @@
 | [Metin Özdemir](https://github.com/metinozdemir01)    | :+1: |
 | [Mustafa Burak Çoruk](https://github.com/MustafaBurakCORUK)    | :+1: |
 | [Sefer İdacı](https://github.com/seferidaci)    | :+1: |
-| []()    | :+1: |
+| [Taha Yurtoğlu](https://github.com/tahayurtoglu)    | :+1: |
 
 
 ## Active Projects
@@ -40,6 +40,6 @@
 - [PCB Hub Motor](https://github.com/odtu/PCB-Hub-Motor)
 - [Three Coil WPT](https://github.com/odtu/Three-Coil-Concurrent-WPT)
 - [3 Phase Inverters](https://github.com/ahmetcan-akuz/3-Phase-Inverters)
-- []()
+- [Gyro](https://github.com/sametyakut/Roketsan-Gyro)
 - []()
 
