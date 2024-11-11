@@ -6,7 +6,7 @@
 |      Ad-Soyad    | W#45|
 |:-----------------|:---------------:|
 | [Ahmetcan Akuz](https://github.com/ahmetcan-akuz)    | :+1: |
-| [Ogün Altun](https://github.com/ogunaltun)    | :unamused: |
+| [Ogün Altun](https://github.com/ogunaltun)    | :+1: |
 | [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :unamused: |
 | [Ali Belli](https://github.com/alibelli)    | :+1: |
 | [Yunus Çay](https://github.com/cayunus)    | :-1: |
