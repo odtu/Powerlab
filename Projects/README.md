@@ -10,7 +10,7 @@
 | [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :unamused: | :-1: |
 | [Ali Belli](https://github.com/alibelli)    | :+1: | :+1: |
 | [Yunus Çay](https://github.com/cayunus)    | :-1: | :-1: |
-| [Mohammad Derogarian](https://github.com/MDerogarian)    | :-1: | :-1: |
+| [Mohammad Derogarian](https://github.com/MDerogarian)    | :-1: | :+1: |
 | [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :clap: | :+1: |
 | [Arda Kasım](https://github.com/ardakasim)    | :+1: | :+1: |
 | [İsmail Macit](https://github.com/ismailmacit)    | :-1: | :+1: |
@@ -27,7 +27,7 @@
 |:-----------------|:----:|:----:|
 | [Aytunç Evlice](https://github.com/aytunc-evlice)    | :-1: | :-1: |
 | [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :-1: | :-1: |
-| [Metin Özdemir](https://github.com/metinozdemir01)    | :-1: | :-1: |
+| [Metin Özdemir](https://github.com/metinozdemir01)    | :-1: | :+1: |
 | [Mustafa Burak Çoruk](https://github.com/MustafaBurakCORUK)    | :unamused: | :clap: |
 | [Sefer İdacı](https://github.com/seferidaci)    | :-1: | :clap: |
 | [Taha Yurtoğlu](https://github.com/tahayurtoglu)    | :+1: | :+1: |
