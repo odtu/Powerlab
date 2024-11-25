@@ -23,8 +23,8 @@
 
 ## Undergrads
 
-|      Ad-Soyad    | W#45| W#46|
-|:-----------------|:----:|:----:|
+|      Ad-Soyad    | W#47| W#45| W#46|
+|:-----------------|:----:|:----:|:----:|
 | [Aytunç Evlice](https://github.com/aytunc-evlice)    | :x: | :x: | :x: |
 | [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)  | :+1: | :x: | :x: |
 | [Metin Özdemir](https://github.com/metinozdemir01)    | :+1:| :x: | :+1: |
