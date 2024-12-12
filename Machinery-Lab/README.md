@@ -34,3 +34,4 @@
 |Göktuğ Tonay| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :heavy_check_mark:   | :no_entry:|
 |Arda Kasım| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Kaan Demirkoparan | 10/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Mehmet Emin Taş | 12/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
