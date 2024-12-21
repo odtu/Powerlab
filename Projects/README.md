@@ -3,31 +3,30 @@
 
 ## Graduate Students
 
-|      Ad-Soyad   |   W#50 | W#49  |  W#48 | W#47| W#45| W#46|
-|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|
-| [Ahmetcan Akuz](https://github.com/ahmetcan-akuz)     | :+1: | :+1: | :+1: | :+1: | :+1: | :+1: |
-| [Ogün Altun](https://github.com/ogunaltun)     | :unamused:| :x:| :+1:| :x:| :+1: | :+1: |
-| [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :unamused:| :clap:| :x:| :x:| :unamused: | :-1: |
-| [Ali Belli](https://github.com/alibelli)    | :unamused:| :unamused:| :x: | :x: | :+1: | :+1: |
-| [Yunus Çay](https://github.com/cayunus)    | :+1:| :clap:| :+1:| :unamused:| :x: | :x: |
-| [Mohammad Derogarian](https://github.com/MDerogarian)    | :+1:| :clap:| :+1:| :+1:| :x: | :+1: |
-| [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :unamused:| :clap:| :+1:| :+1:| :clap: | :+1: |
-| [Arda Kasım](https://github.com/ardakasim)    | :+1:| :clap:| :x:| :+1: | :+1: | :+1: |
-| [İsmail Macit](https://github.com/ismailmacit)    | :+1:| :+1:| :x:| :unamused:| :x: | :+1: |
-| [Mohammad H. Mokhtare](https://github.com/Mohammad-M93)     | :+1:| :clap:| :+1: |:exclamation:| :x: | :x: |
-| [Göktuğ Tonay](https://github.com/Gktut)    | :+1:| :+1:| :x:| :+1: | :unamused: | :x: |
-| [Elif Topaloğlu](https://github.com/eliftplgl)     | :+1:| :fire:| :+1:| :+1:| :+1: | :clap: |
-| [M. Samet Yakut](https://github.com/sametyakut)    | :+1:| :unamused:| :+1:| :+1: | :+1: | :+1: |
-| [Yusuf Basri Yılmaz](https://github.com/yusufbyilmaz)   | :unamused:| :+1:| :fire:| :fire: | :weary: | :x: |
+|      Ad-Soyad   |   W#51|   W#50 | W#49  |  W#48 | W#47| W#45| W#46|
+|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| [Ahmetcan Akuz](https://github.com/ahmetcan-akuz)      | :+1| :+1: | :+1: | :+1: | :+1: | :+1: | :+1: |
+| [Ogün Altun](https://github.com/ogunaltun)     | :+1:| :unamused:| :x:| :+1:| :x:| :+1: | :+1: |
+| [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :+1:| :unamused:| :clap:| :x:| :x:| :unamused: | :-1: |
+| [Ali Belli](https://github.com/alibelli)    | :unamused:| :unamused:| :unamused:| :x: | :x: | :+1: | :+1: |
+| [Yunus Çay](https://github.com/cayunus)    | :+1:| :+1:| :clap:| :+1:| :unamused:| :x: | :x: |
+| [Mohammad Derogarian](https://github.com/MDerogarian)    | :fire:| :+1:| :clap:| :+1:| :+1:| :x: | :+1: |
+| [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :unamused:| :unamused:| :clap:| :+1:| :+1:| :clap: | :+1: |
+| [Arda Kasım](https://github.com/ardakasim)    | :x:| :+1:| :clap:| :x:| :+1: | :+1: | :+1: |
+| [İsmail Macit](https://github.com/ismailmacit)    | :x:| :+1:| :+1:| :x:| :unamused:| :x: | :+1: |
+| [Mohammad H. Mokhtare](https://github.com/Mohammad-M93)     | :+1:| :+1:| :clap:| :+1: |:exclamation:| :x: | :x: |
+| [Göktuğ Tonay](https://github.com/Gktut)    | :+1:| :+1:| :+1:| :x:| :+1: | :unamused: | :x: |
+| [Elif Topaloğlu](https://github.com/eliftplgl)     | :+1:| :+1:| :fire:| :+1:| :+1:| :+1: | :clap: |
+| [M. Samet Yakut](https://github.com/sametyakut)    | :+1:| :+1:| :unamused:| :+1:| :+1: | :+1: | :+1: |
+| [Yusuf Basri Yılmaz](https://github.com/yusufbyilmaz)   | :+1:| :unamused:| :+1:| :fire:| :fire: | :weary: | :x: |
 
 
 ## Undergrads
 
-|      Ad-Soyad   |   W#50 | W#49  |  W#48 | W#47| W#45| W#46|
-|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|
-| [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)  | :clap:| :+1:| :+1:| :+1: | :x: | :x: |
-| [Metin Özdemir](https://github.com/metinozdemir01)     | :x:| :x:| :+1:| :+1:| :x: | :+1: |
-| [Mustafa Burak Çoruk](https://github.com/MustafaBurakCORUK)    | :x:| :x: | :+1:| :fire:| :unamused: | :clap: |
+|      Ad-Soyad   |   W#51|   W#50 | W#49  |  W#48 | W#47| W#45| W#46|
+|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)  | :+1:| :clap:| :+1:| :+1:| :+1: | :x: | :x: |
+| [Metin Özdemir](https://github.com/metinozdemir01)     | :x:| :x:| :x:| :+1:| :+1:| :x: | :+1: |
 
 
 ## Active Projects
@@ -44,6 +43,7 @@
 
 ## Inactive Accounts
 
-[Aytunç Evlice](https://github.com/aytunc-evlice) 
-[Taha Yurtoğlu](https://github.com/tahayurtoglu)
-[Sefer İdacı](https://github.com/seferidaci)
+- [Aytunç Evlice](https://github.com/aytunc-evlice) 
+- [Taha Yurtoğlu](https://github.com/tahayurtoglu)
+- [Sefer İdacı](https://github.com/seferidaci)
+- [Mustafa Burak Çoruk](https://github.com/MustafaBurakCORUK)
