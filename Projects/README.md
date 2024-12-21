@@ -5,7 +5,7 @@
 
 |      Ad-Soyad   |   W#51|   W#50 | W#49  |  W#48 | W#47| W#45| W#46|
 |:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| [Ahmetcan Akuz](https://github.com/ahmetcan-akuz)      | :+1| :+1: | :+1: | :+1: | :+1: | :+1: | :+1: |
+| [Ahmetcan Akuz](https://github.com/ahmetcan-akuz)      | :+1:| :+1: | :+1: | :+1: | :+1: | :+1: | :+1: |
 | [Ogün Altun](https://github.com/ogunaltun)     | :+1:| :unamused:| :x:| :+1:| :x:| :+1: | :+1: |
 | [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :+1:| :unamused:| :clap:| :x:| :x:| :unamused: | :-1: |
 | [Ali Belli](https://github.com/alibelli)    | :unamused:| :unamused:| :unamused:| :x: | :x: | :+1: | :+1: |
