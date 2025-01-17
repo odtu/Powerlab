@@ -33,6 +33,7 @@
 
 - [Vitesco Projects](https://github.com/odtu/VITESCO-METU)
 - [Cycloid Motor](https://github.com/odtu/Cycloid-Integrated-Robotic-Actuator)
+- [Saleri PCB Pump](https://github.com/odtu/Saleri-PCB-Motor-for-ePumps)
 - [Lab on a Lap](https://github.com/odtu/lab-on-a-lap)
 - [PCB Hub Motor](https://github.com/odtu/PCB-Hub-Motor)
 - [Three Coil WPT](https://github.com/odtu/Three-Coil-Concurrent-WPT)
