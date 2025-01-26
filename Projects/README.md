@@ -4,30 +4,30 @@ For the 2024 commits please have a look at the README_2024.md file
 
 ## Graduate Students
 
-|      Ad-Soyad   |   W#3 |   W#2 |  
-|:-----------------|:----:|:----:|  
-| [Ahmetcan Akuz](https://github.com/ahmetcan-akuz)      | :x:| :unamused: |
-| [Ogün Altun](https://github.com/ogunaltun)      | :+1:| :+1:|
-| [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :+1:| :x:|
-| [Ali Belli](https://github.com/alibelli)    | :x:| :unamused: |
-| [Yunus Çay](https://github.com/cayunus)    | :fire:| :fire: |
-| [Mohammad Derogarian](https://github.com/MDerogarian)    | :unamused:| :unamused:| 
-| [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :+1:| :+1:| 
-| [Arda Kasım](https://github.com/ardakasim)    | :+1: | :x:| 
-| [İsmail Macit](https://github.com/ismailmacit)    | :x:| :+1:| 
-| [Mohammad H. Mokhtare](https://github.com/Mohammad-M93)     | :+1:| :fire:| 
-| [Göktuğ Tonay](https://github.com/Gktut)    | :x:| :x:| 
-| [Elif Topaloğlu](https://github.com/eliftplgl)     | :unamused:| :unamused:| 
-| [M. Samet Yakut](https://github.com/sametyakut)    | :x:| :x:| 
-| [Yusuf Basri Yılmaz](https://github.com/yusufbyilmaz)   | :x:| :x:| 
+|      Ad-Soyad   |  W#4 |  W#3 |   W#2 |  
+|:-----------------|:----:|:----:|:----:|  
+| [Ahmetcan Akuz](https://github.com/ahmetcan-akuz)      | :unamused:| :x:| :unamused: |
+| [Ogün Altun](https://github.com/ogunaltun)       | :unamused:| :+1:| :+1:|
+| [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :+1:| :+1:| :x:|
+| [Ali Belli](https://github.com/alibelli)    | :x:| :x:| :unamused: |
+| [Yunus Çay](https://github.com/cayunus)    | :+1:| :fire:| :fire: |
+| [Mohammad Derogarian](https://github.com/MDerogarian)    ::airplane:| :unamused:| :unamused:| 
+| [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :fire:| :+1:| :+1:| 
+| [Arda Kasım](https://github.com/ardakasim)    | :x:| :+1: | :x:| 
+| [İsmail Macit](https://github.com/ismailmacit)    | :unamused:| :x:| :+1:| 
+| [Mohammad H. Mokhtare](https://github.com/Mohammad-M93)     | :+1:| :+1:| :fire:| 
+| [Göktuğ Tonay](https://github.com/Gktut)     | :+1:| :x:| :x:| 
+| [Elif Topaloğlu](https://github.com/eliftplgl)      | :fire:| :unamused:| :unamused:| 
+| [M. Samet Yakut](https://github.com/sametyakut)    | :x:| :x:| :x:| 
+| [Yusuf Basri Yılmaz](https://github.com/yusufbyilmaz)   | :unamused:| :x:| :x:| 
 
 
 ## Undergrads
-|      Ad-Soyad   |   W#3 |   W#2 |  
-|:-----------------|:----:|:----:|  
-| [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)   | :x:| :x:| 
-| [Metin Özdemir](https://github.com/metinozdemir01)     | :x:| :x:| 
-| [Sefer İdacı](https://github.com/seferidaci)   | :x:| :x:| 
+|      Ad-Soyad   |  W#4 |  W#3 |   W#2 |  
+|:-----------------|:----:|:----:|:----:|  
+| [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :x:| :x:| :x:| 
+| [Metin Özdemir](https://github.com/metinozdemir01)      | :x:| :x:| :x:| 
+| [Sefer İdacı](https://github.com/seferidaci)   | :+1:| :x:| :x:| 
 
 
 ## Active Projects
