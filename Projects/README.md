@@ -51,3 +51,4 @@ For the 2024 commits please have a look at the README_2024.md file
 - [Mustafa Burak Çoruk](https://github.com/MustafaBurakCORUK)
 - [Hamza Solmaz](https://github.com/HamzaSolmaz)
 - [Berkay Berkeban](https://github.com/bekraysal)
+- [Emre Sevinç](https://github.com/emre-sevinc)
