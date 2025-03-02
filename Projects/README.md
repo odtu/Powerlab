@@ -4,33 +4,32 @@ For the 2024 commits please have a look at the README_2024.md file
 
 ## Graduate Students
 
-|      Ad-Soyad    |  W#8 |  W#7 |  W#6 |  W#5 |  W#4 |  W#3 |   W#2 |  
-|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|  
-| [Ogün Altun](https://github.com/ogunaltun)        | :fire:| :+1:| :fire:| :+1:| :unamused:| :+1:| :+1:|
-| [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :unamused:| :unamused:| :unamused:| :fire:| :+1:| :+1:| :x:|
-| [Yunus Çay](https://github.com/cayunus)    | :+1:| :unamused:| :car:| :+1:| :+1:| :fire:| :fire: |
-| [Mohammad Derogarian](https://github.com/MDerogarian)    | :+1:| :unamused:| :airplane:| :+1:| :airplane:| :unamused:| :unamused:| 
-| [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :+1:| :+1:| :+1:| :fire:| :fire:| :+1:| :+1:| 
-| [Arda Kasım](https://github.com/ardakasim)     | :unamused:| :x:| :unamused:| :+1:| :x:| :+1: | :x:| 
-| [İsmail Macit](https://github.com/ismailmacit)    | :x:| :fire:| :x:| :unamused:| :unamused:| :x:| :+1:| 
-| [Mohammad H. Mokhtare](https://github.com/Mohammad-M93)     | :+1:| :x:| :x:| :+1:| :+1:| :+1:| :fire:| 
-| [Göktuğ Tonay](https://github.com/Gktut)     | :x:| :x:| :unamused:| :x:| :+1:| :x:| :x:| 
-| [Elif Topaloğlu](https://github.com/eliftplgl)       | :+1:| :fire:| :fire:| :fire:| :fire:| :unamused:| :unamused:| 
-| [M. Samet Yakut](https://github.com/sametyakut)     | :fire:| :fire:| :fire:| :x:| :x:| :x:| :x:| 
-| [Yusuf Basri Yılmaz](https://github.com/yusufbyilmaz)     | :+1:| :+1:| :+1:| :car:| :unamused:| :x:| :x:| 
+|      Ad-Soyad    |  W#9 |  W#8 |  W#7 |  W#6 |  W#5 |  W#4 |  W#3 |   W#2 |  
+|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|  
+| [Ogün Altun](https://github.com/ogunaltun)        | :fire:| :fire:| :+1:| :fire:| :+1:| :unamused:| :+1:| :+1:|
+| [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :+1:| :unamused:| :unamused:| :unamused:| :fire:| :+1:| :+1:| :x:|
+| [Yunus Çay](https://github.com/cayunus)    | :+1:| :+1:| :unamused:| :car:| :+1:| :+1:| :fire:| :fire: |
+| [Mohammad Derogarian](https://github.com/MDerogarian)    | :+1:| :+1:| :unamused:| :airplane:| :+1:| :airplane:| :unamused:| :unamused:| 
+| [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :unamused:| :+1:| :+1:| :+1:| :fire:| :fire:| :+1:| :+1:| 
+| [Arda Kasım](https://github.com/ardakasim)     | :unamused:| :unamused:| :x:| :unamused:| :+1:| :x:| :+1: | :x:| 
+| [İsmail Macit](https://github.com/ismailmacit)    | :fire:| :x:| :fire:| :x:| :unamused:| :unamused:| :x:| :+1:| 
+| [Mohammad H. Mokhtare](https://github.com/Mohammad-M93)     | :x:| :+1:| :x:| :x:| :+1:| :+1:| :+1:| :fire:| 
+| [Elif Topaloğlu](https://github.com/eliftplgl)       | :fire:| :+1:| :fire:| :fire:| :fire:| :fire:| :unamused:| :unamused:| 
+| [M. Samet Yakut](https://github.com/sametyakut)     | :fire:| :fire:| :fire:| :fire:| :x:| :x:| :x:| :x:| 
+| [Yusuf Basri Yılmaz](https://github.com/yusufbyilmaz)     | :+1:| :+1:| :+1:| :+1:| :car:| :unamused:| :x:| :x:| 
 
 ## Undergrads
-|      Ad-Soyad    |  W#8 |  W#7 |  W#6 |  W#5 |  W#4 |  W#3 |   W#2 |  
-|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|   
-| [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :+1:| :+1:| :+1:| :+1:| :x:| :x:| :x:| 
-| [Metin Özdemir](https://github.com/metinozdemir01)      | :+1:| :x:| :+1:| :+1:| :x:| :x:| :x:| 
-| [Sefer İdacı](https://github.com/seferidaci)   | :+1:| :fire:| :+1:| :+1:| :+1:| :x:| :x:| 
-| [Emirhan Aydın](https://github.com/emirhanydiin)   | :+1:| :+1:| :+1:|  |  |  |  | 
-| [Furkan Turan](https://github.com/furkanturan08)    | :x:| :x:| :+1:|  |  |  |  | 
-| [Alp Torun](https://github.com/Alp-Torun)    | :x:| :x:| :+1:|  |  |  |  | 
-| [Taha Yurtoğlu](https://github.com/tahayurtoglu)    | :+1:| :x:| :x:| :x: |  |  |  | 
-| [Ekrem Turan Fırat](https://github.com/ekremturanfirat)    | :fire:| | |  |  |  |  | 
-
+|      Ad-Soyad    |  W#9 |  W#8 |  W#7 |  W#6 |  W#5 |  W#4 |  W#3 |   W#2 |  
+|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :+1:| :+1:| :+1:| :+1:| :+1:| :x:| :x:| :x:| 
+| [Metin Özdemir](https://github.com/metinozdemir01)      | :+1:| :+1:| :x:| :+1:| :+1:| :x:| :x:| :x:| 
+| [Sefer İdacı](https://github.com/seferidaci)   | :x:| :+1:| :fire:| :+1:| :+1:| :+1:| :x:| :x:| 
+| [Emirhan Aydın](https://github.com/emirhanydiin)   | :fire:| :+1:| :+1:| :+1:|  |  |  |  | 
+| [Furkan Turan](https://github.com/furkanturan08)    | :x:| :x:| :x:| :+1:|  |  |  |  | 
+| [Alp Torun](https://github.com/Alp-Torun)    | :+1:| :x:| :x:| :+1:|  |  |  |  | 
+| [Taha Yurtoğlu](https://github.com/tahayurtoglu)    | :+1:| :+1:| :x:| :x:| :x: |  |  |  | 
+| [Ekrem Turan Fırat](https://github.com/ekremturanfirat)    | :fire:| :fire:| :fire:| | |  |  |  | 
+| [Emre Sevinç](https://github.com/emre-sevinc) | :+1:| | | | |  |  |  | 
 ## Active Projects
 
 - [Vitesco Projects](https://github.com/odtu/VITESCO-METU)
@@ -52,3 +51,4 @@ For the 2024 commits please have a look at the README_2024.md file
 - [Hamza Solmaz](https://github.com/HamzaSolmaz)
 - [Berkay Berkeban](https://github.com/bekraysal)
 - [Emre Sevinç](https://github.com/emre-sevinc)
+- [Göktuğ Tonay](https://github.com/Gktut)  
