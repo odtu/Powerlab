@@ -28,10 +28,10 @@
 |Mohammad Derogarian| 03/2025 |:heavy_check_mark:| :heavy_check_mark:   |  :no_entry:    | :no_entry:|
 |Ali Belli| 10/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Ahmetcan Akuz| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
-|Mustafa Burak Çoruk| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
 |Tugay Gül| 03/2025 |:heavy_check_mark:| :no_entry: |  :no_entry:    | :no_entry:|
 |İsmail Macit| 03/2025 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Göktuğ Tonay| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :heavy_check_mark:   | :no_entry:|
 |Arda Kasım| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Kaan Demirkoparan | 10/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
 |Mehmet Emin Taş | 12/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Halid Filiz | 12/2025 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
