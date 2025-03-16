@@ -5,7 +5,7 @@ For the 2024 commits please have a look at the README_2024.md file
 ## Graduate Students
 
 |      Ad-Soyad    |  W#11 |  W#10 |  W#9 |  W#8 |  W#7 |  W#6 |  W#5 |  W#4 |  W#3 |   W#2 |  
-|:-----------------|:----:||:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|  
+|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|  
 | [Ogün Altun](https://github.com/ogunaltun)        | :airplane:| :airplane:| :fire:| :fire:| :+1:| :fire:| :+1:| :unamused:| :+1:| :+1:|
 | [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :+1:| :+1:| :+1:| :unamused:| :unamused:| :unamused:| :fire:| :+1:| :+1:| :x:|
 | [Yunus Çay](https://github.com/cayunus)    | :unamused:| :+1:| :+1:| :+1:| :unamused:| :car:| :+1:| :+1:| :fire:| :fire: |
@@ -21,7 +21,7 @@ For the 2024 commits please have a look at the README_2024.md file
 ## Undergrads
 
 |      Ad-Soyad    |  W#11 |  W#10 |  W#9 |  W#8 |  W#7 |  W#6 |  W#5 |  W#4 |  W#3 |   W#2 |  
-|:-----------------|:----:||:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|  
+|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|  
 | [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :fire:| :+1:| :+1:| :+1:| :+1:| :+1:| :+1:| :x:| :x:| :x:| 
 | [Metin Özdemir](https://github.com/metinozdemir01)      | :fire:| :+1:| :+1:| :+1:| :x:| :+1:| :+1:| :x:| :x:| :x:| 
 | [Sefer İdacı](https://github.com/seferidaci)    | :+1:| :x:| :x:| :+1:| :fire:| :+1:| :+1:| :+1:| :x:| :x:| 
@@ -30,6 +30,7 @@ For the 2024 commits please have a look at the README_2024.md file
 | [Taha Yurtoğlu](https://github.com/tahayurtoglu)    | :x:| :x:| :+1:| :+1:| :x:| :x:| :x: |  |  |  | 
 | [Ekrem Turan Fırat](https://github.com/ekremturanfirat)    | :fire:| :fire:| :fire:| :fire:| :fire:| | |  |  |  | 
 | [Emre Sevinç](https://github.com/emre-sevinc) | :+1:| :fire:| :+1:| | | | |  |  |  | 
+
 ## Active Projects
 
 - [Vitesco Projects](https://github.com/odtu/VITESCO-METU)
