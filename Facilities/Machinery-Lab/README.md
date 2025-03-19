@@ -35,3 +35,4 @@
 |Kaan Demirkoparan | 10/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
 |Mehmet Emin Taş | 12/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
 |Halid Filiz | 12/2025 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Metin Özdemir | 06/2026 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
