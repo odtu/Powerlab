@@ -27,7 +27,6 @@ For the 2024 commits please have a look at the README_2024.md file
 | [Sefer İdacı](https://github.com/seferidaci)    | :x:| :x:| :+1:| :x:| :x:| :+1:| :fire:| :+1:| :+1:| :+1:| :x:| :x:| 
 | [Emirhan Aydın](https://github.com/emirhanydiin)   | :x:| :+1:| :fire:| :+1:| :fire:| :+1:| :+1:| :+1:|  |  |  |  | 
 | [Alp Torun](https://github.com/Alp-Torun)    | :+1:| :x:| :x:| :+1:| :+1:| :x:| :x:| :+1:|  |  |  |  | 
-| [Taha Yurtoğlu](https://github.com/tahayurtoglu)    | :x:| :x:| :x:| :+1:| :+1:| :x:| :x:| :x: |  |  |  | 
 | [Ekrem Turan Fırat](https://github.com/ekremturanfirat)    | :fire:| :fire:| :fire:| :fire:| :fire:| :fire:| :fire:| | |  |  |  | 
 | [Emre Sevinç](https://github.com/emre-sevinc) | :+1:| :+1:| :x:| :fire:| :+1:| :+1:| | | |  |  |  | 
 
