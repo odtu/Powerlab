@@ -20,7 +20,7 @@ Here are some guidelines for the tables:
 
 - Each year is divided into 4 quarters (13 weeks each)
 - I'll calculate your GPA for each quarter (excluding off or sick weeks)
-- Four consecutive weeks without a commit (:x:) results in (U: unsatisfactory) from that quarter
+- Four consecutive weeks without a commit ( :x: ) results in (U: unsatisfactory) from that quarter
 - 2 quarters with (U) results in an actual (U) of your MSc course grade.
 
 For the previous commit list you can have a look at other markdown files in this folder.
