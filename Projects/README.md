@@ -13,8 +13,8 @@ Please have a look at my [blog post](https://keysan.me/blog/weekly_meetings_sabb
 
 - :fire: : 4.00  (> 3 commits/week)
 - :+1: : 3.00 (3 commits/week, 1 commit/week for undergrads)
-- :unamused: 1.00 (1-2 commits /week)
-- :x: 0.00 (no commit) 
+- :unamused: : 1.00 (1-2 commits /week)
+- :x: : 0.00 (no commit) 
 
 Here are some guidelines for the tables:
 
