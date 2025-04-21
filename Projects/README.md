@@ -21,8 +21,8 @@ For the 2024 commits please have a look at the README_2024.md file
 
 ## Undergrads
 
-|      Ad-Soyad    |  W#15|  W#14|  2025-Q1 | 
-|:-----------------|:----:|:----:|:----:| 
+|      Ad-Soyad    |  W#16|  W#15|  W#14|  2025-Q1 | 
+|:-----------------|:----:|:----:|:----:|:----:| 
 | [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :fire:| :x:| :candy:| 2.33|
 | [Metin Özdemir](https://github.com/metinozdemir01)      | :x:| :x:| :candy:| 1.83 | 
 | [Sefer İdacı](https://github.com/seferidaci)    | :x:| :x:| :candy:| 1.58 |
