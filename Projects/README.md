@@ -1,6 +1,29 @@
 # Active Users and Projects List
-For the 2024 commits please have a look at the README_2024.md file
 
+Here are the GitHub score tables I use as  *one* of the metrics to evaluate your research performance. 
+I understand that the number of commits alone may not reflect your contribution as a researcher - think of it more like a "step counter" for the healthy research life you'll achieve. Other key metrics that I consider include:
+
+- Number of issues you've completed
+- Number of milestones you've achieved
+- Research papers you've published.
+
+Please have a look at my [blog post](https://keysan.me/blog/weekly_meetings_sabbatical/) for details for commit scores.
+
+### Score list:
+
+- :fire: : 4.00  (> 3 commits/week)
+- :+1: : 3.00 (3 commits/week, 1 commit/week for undergrads)
+- :unamused: 1.00 (1-2 commits /week)
+- :x: 0.00 (no commit) 
+
+Here are some guidelines for the tables:
+
+- Each year is divided into 4 quarters (13 weeks each)
+- I'll calculate your GPA for each quarter (excluding off or sick weeks)
+- Four consecutive weeks without a commit (:x:) results in (U: unsatisfactory) from that quarter
+- 2 quarters with (U) results in an actual (U) of your MSc course grade.
+
+For the previous commit list you can have a look at other markdown files in this folder.
 
 ## Graduate Students
 
@@ -27,7 +50,7 @@ For the 2024 commits please have a look at the README_2024.md file
 | [Metin Özdemir](https://github.com/metinozdemir01)      | :x:| :x:| :candy:| 1.83 | 
 | [Sefer İdacı](https://github.com/seferidaci)    | :x:| :x:| :candy:| 1.58 |
 | [Emirhan Aydın](https://github.com/emirhanydiin)   | :x:| :+1:| :candy:| 2.88 |
-| [Alp Torun](https://github.com/Alp-Torun)    | :x:| :x:| :+1:| 1.50 | :x:| :x:|
+| [Alp Torun](https://github.com/Alp-Torun)    | :x:| :x:| :+1:| 1.50 |
 | [Ekrem Turan Fırat](https://github.com/ekremturanfirat)    | :fire:| :fire:| :fire:| 4.00 | 
 | [Emre Sevinç](https://github.com/emre-sevinc) | :x:| :+1:| :candy:| 2.67| 
  
