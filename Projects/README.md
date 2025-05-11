@@ -27,31 +27,31 @@ For the previous commit list you can have a look at other markdown files in this
 
 ## Graduate Students
 
-|      Ad-Soyad    |  W#18 |  W#17|  W#16|  W#15|  W#14|  2025-Q1 | 
-|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:| 
-| [Ogün Altun](https://github.com/ogunaltun)        | :+1:| :+1:| :x:| :+1:| :+1:| 3.20 | 
-| [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :unamused:| :unamused:| :+1:| :+1:| :candy: | 2.08 |
-| [Yunus Çay](https://github.com/cayunus)    | :+1:| :+1:| :unamused:| :unamused:| :+1:|  2.90 |
-| [Mohammad Derogarian](https://github.com/MDerogarian)    | :fire:| :fire:| :+1:| :fire:| :+1:| 2.60 |
-| [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :+1:| :unamused:|:airplane:| :+1:| :+1:|  3.09 | 
-| [Arda Kasım](https://github.com/ardakasim)     | :unamused:| :fire:| :unamused:| :fire:| :fire:| 1.82 | 
-| [İsmail Macit](https://github.com/ismailmacit)    | :unamused:| :fire:| :unamused:| :+1:| :candy:| 2.00 |
-| [Mohammad H. Mokhtare](https://github.com/Mohammad-M93)    | :unamused:| :+1:| :+1: | :+1:| :fire:| 2.67 |
-| [Göktuğ Tonay](https://github.com/Gktut)    | :+1:| :+1:| :+1:| :unamused:| :unamused:| U |
-| [Elif Topaloğlu](https://github.com/eliftplgl)       | :fire:| :+1:| :fire:| :+1:| :candy:| 3.08 |
-| [M. Samet Yakut](https://github.com/sametyakut)      | :unamused:| :unamused:| :unamused:| :+1:| :candy:| 2.42 |
-| [Yusuf Basri Yılmaz](https://github.com/yusufbyilmaz)     | :unamused:| :fire:| :unamused:| :+1:| :candy:| 2.18|
+|      Ad-Soyad    |  W#19 |  W#18 |  W#17|  W#16|  W#15|  W#14|  2025-Q1 | 
+|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:| 
+| [Ogün Altun](https://github.com/ogunaltun)        | :+1:| :+1:| :+1:| :x:| :+1:| :+1:| 3.20 | 
+| [Işık Emir Altunkol](https://github.com/emir-altunkol)    | :unamused:| :unamused:| :unamused:| :+1:| :+1:| :candy: | 2.08 |
+| [Yunus Çay](https://github.com/cayunus)    | :+1:| :+1:| :+1:| :unamused:| :unamused:| :+1:|  2.90 |
+| [Mohammad Derogarian](https://github.com/MDerogarian)    | :fire:| :fire:| :fire:| :+1:| :fire:| :+1:| 2.60 |
+| [Özgür Gülsuna](https://github.com/ozgurgulsuna)    | :fire:| :+1:| :unamused:|:airplane:| :+1:| :+1:|  3.09 | 
+| [Arda Kasım](https://github.com/ardakasim)     | :+1:| :unamused:| :fire:| :unamused:| :fire:| :fire:| 1.82 | 
+| [İsmail Macit](https://github.com/ismailmacit)    | :unamused:| :unamused:| :fire:| :unamused:| :+1:| :candy:| 2.00 |
+| [Mohammad H. Mokhtare](https://github.com/Mohammad-M93)    | :fire:| :unamused:| :+1:| :+1: | :+1:| :fire:| 2.67 |
+| [Göktuğ Tonay](https://github.com/Gktut)    | :fire:| :+1:| :+1:| :+1:| :unamused:| :unamused:| U |
+| [Elif Topaloğlu](https://github.com/eliftplgl)       | :unamused:| :fire:| :+1:| :fire:| :+1:| :candy:| 3.08 |
+| [M. Samet Yakut](https://github.com/sametyakut)      | :unamused:| :unamused:| :unamused:| :unamused:| :+1:| :candy:| 2.42 |
+| [Yusuf Basri Yılmaz](https://github.com/yusufbyilmaz)     | :fire:| :unamused:| :fire:| :unamused:| :+1:| :candy:| 2.18|
 
 ## Undergrads
 
-|      Ad-Soyad    |  W#18 |  W#17|  W#16|  W#15|  W#14|  2025-Q1 | 
-|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:| 
-| [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :fire:| :fire:| :fire:| :x:| :candy:| 2.33|
-| [Metin Özdemir](https://github.com/metinozdemir01)      | :fire:| :fire:| :x:| :x:| :candy:| 1.83 | 
-| [Emirhan Aydın](https://github.com/emirhanydiin)   | :fire:| :fire:| :x:| :+1:| :candy:| 2.88 |
-| [Alp Torun](https://github.com/Alp-Torun)    | :+1:| :x:| :x:| :x:| :+1:| 1.50 |
-| [Ekrem Turan Fırat](https://github.com/ekremturanfirat)    | :fire:| :fire:| :fire:| :fire:| :fire:| 4.00 | 
-| [Emre Sevinç](https://github.com/emre-sevinc) | :+1:| :+1:| :x:| :+1:| :candy:| 2.67| 
+|      Ad-Soyad    |  W#19 |  W#18 |  W#17|  W#16|  W#15|  W#14|  2025-Q1 | 
+|:-----------------|:----:|:----:|:----:|:----:|:----:|:----:|:----:| 
+| [Kaan Demirkoparan](https://github.com/KaanDemirkoparan)    | :x:| :fire:| :fire:| :fire:| :x:| :candy:| 2.33|
+| [Metin Özdemir](https://github.com/metinozdemir01)      | :x:| :fire:| :fire:| :x:| :x:| :candy:| 1.83 | 
+| [Emirhan Aydın](https://github.com/emirhanydiin)   | :x:| :fire:| :fire:| :x:| :+1:| :candy:| 2.88 |
+| [Alp Torun](https://github.com/Alp-Torun)    | :+1:| :+1:| :x:| :x:| :x:| :+1:| 1.50 |
+| [Ekrem Turan Fırat](https://github.com/ekremturanfirat)    | :fire:| :fire:| :fire:| :fire:| :fire:| :fire:| 4.00 | 
+| [Emre Sevinç](https://github.com/emre-sevinc) | :x:| :+1:| :+1:| :x:| :+1:| :candy:| 2.67| 
  
 
 ## Active Projects
