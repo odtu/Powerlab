@@ -2,14 +2,14 @@
 
 ## Yetki Türleri
 
-- Mesai saatlerinde erişim: Bu kullanıcıların sadece kimlik kartlarına yetkilendirme yapılır. Giriş çıkışlarda kart okutarak giriş yapabilir, ancak laboratuvar kapısı mesai saatleri dışında kilitliyken kullanamaz.
-- Mesai saatleri dışında erişim: Bu kullanıcıların elektronik kart yetkilerine ek olarak laboratuvar kapısının kilit anahtarı veya anahtar dolabının şifresi verilir. Mesai saatleri kullanım kurallarına uymak kullanıcının sorumluluğundadır.
-- Malzeme dolap yetkisi: Bu kullanıcılara yukarıdaki yetkilere ek olarak, malzeme dolaplarına erişim için anahtar kutusunun anahtarı verilir.
-- Tez dolabı: Yukarıdaki yetkilere ek olarak öğrencinin tez çalışmalarında kullanılmak üzere kişisel eşyalar için bir adet kişiye özel dolap ve anahtarı sağlanır.
+- **Mesai saatlerinde erişim:** Bu kullanıcıların sadece kimlik kartlarına yetkilendirme yapılır. Giriş çıkışlarda kart okutarak giriş yapabilir, ancak laboratuvar kapısı mesai saatleri dışında kilitliyken kullanamaz.
+- **Mesai saatleri dışında erişim:** Bu kullanıcıların elektronik kart yetkilerine ek olarak laboratuvar kapısının kilit anahtarı veya anahtar dolabının şifresi verilir. Mesai saatleri kullanım kurallarına uymak kullanıcının sorumluluğundadır.
+- **Malzeme dolap yetkisi:** Bu kullanıcılara yukarıdaki yetkilere ek olarak, malzeme dolaplarına erişim için anahtar kutusunun anahtarı verilir.
+- **Tez dolabı:** Yukarıdaki yetkilere ek olarak öğrencinin tez çalışmalarında kullanılmak üzere kişisel eşyalar için bir adet kişiye özel dolap ve anahtarı sağlanır.
 
 ---
 
-## Kurallar
+## Laboratuvar Kurallar
 
 a) Elektrik makinaları laboratuvarında çalışırken genel iş ve elektrik güvenliği kurallarına uyulacaktır. Bu kurallar laboratuvar sorumlusu ve teknisyen tarafından yetkilendirme sonrası yetkilendirilen kişiye aktarılacaktır. Bu tanıtımda aşağıdaki konularda bilgilendirme yapılacaktır:
 
