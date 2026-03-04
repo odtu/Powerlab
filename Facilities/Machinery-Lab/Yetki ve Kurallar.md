@@ -2,9 +2,18 @@
 
 ## Yetki Türleri
 
-- **Mesai saatlerinde erişim:** Bu kullanıcıların sadece kimlik kartlarına yetkilendirme yapılır. Giriş çıkışlarda kart okutarak giriş yapabilir, ancak laboratuvar kapısı mesai saatleri dışında kilitliyken kullanamaz.
-- **Mesai saatleri dışında erişim:** Bu kullanıcıların elektronik kart yetkilerine ek olarak laboratuvar kapısının kilit anahtarı veya anahtar dolabının şifresi verilir. Mesai saatleri kullanım kurallarına uymak kullanıcının sorumluluğundadır.
-- **Malzeme dolap yetkisi:** Bu kullanıcılara yukarıdaki yetkilere ek olarak, malzeme dolaplarına erişim için anahtar kutusunun anahtarı verilir.
+- ~**Mesai saatlerinde erişim:** Bu kullanıcıların sadece kimlik kartlarına yetkilendirme yapılır. Giriş çıkışlarda kart okutarak giriş yapabilir, ancak laboratuvar kapısı mesai saatleri dışında kilitliyken kullanamaz.~
+- **Temel kullanıcı:** Bu kullanıcılar Powerlab araştırma grubunun projeleri için Makina Labındaki aletleri kullanabilirler. Bu aletler havya/hot plate/kompresör/low voltage supply gibi end-userların güvenliğinin yüksek olduğu ekipmanlardır. Bu kullanıcılar dolaplara müdahale edemezler.
+- ~**Mesai saatleri dışında erişim:** Bu kullanıcıların elektronik kart yetkilerine ek olarak laboratuvar kapısının kilit anahtarı veya anahtar dolabının şifresi verilir. Mesai saatleri kullanım kurallarına uymak kullanıcının sorumluluğundadır.~
+- **Yetkin kullanıcı:** Bu kullanıcılar Laboratuvar Sorumlusu tarafından belirlenen ve güvenlik kurallarına daimen uyduğu gözlenmiş olan kullanıcılardır. 3-faz sigortaları ihtiyaç dahilinde açabilirler. Yüksek güç/voltaj seviyelerinde çalışan ekipmanları kullanabilirler. Bu ekipmanların listesi:
+  - Cinergia
+  - Chroma
+  - Itech
+  - Variac
+  - ?
+
+  Dolaplardaki malzemelere erişimleri vardır, Laboratuvar Sorumlusu'nun bilgisi dahilinde malzemeleri setuplarında kullanmak için dolaptan çıkarabilirler.
+- ~**Malzeme dolap yetkisi:** Bu kullanıcılara yukarıdaki yetkilere ek olarak, malzeme dolaplarına erişim için anahtar kutusunun anahtarı verilir.~
 - **Tez dolabı:** Yukarıdaki yetkilere ek olarak öğrencinin tez çalışmalarında kullanılmak üzere kişisel eşyalar için bir adet kişiye özel dolap ve anahtarı sağlanır.
 
 ---
