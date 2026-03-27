@@ -10,8 +10,8 @@
 
 - **Uzman Kullanıcı:** Laboratuvarın genel düzeninden, güvenlik standartlarının uygulanmasından sorumlu kullanıcılardır. Bu kişilerin onayı ve referansıyla kullanım yetkileri verilebilir veya alınabilir. Akademik danışmanlar da uzman kullanıcı statüsündedir. Akademik danışmanlar hariç laboratuvarda en fazla 5 adet uzman kullanıcı tanımlanabilir.
 
-     Kullanıcı Türü   |  Mesai İçinde | Mesai Dışında | Yeni Setup Oluşturma | Malzeme Dolabı | Özel Dolap |
-|:-----------------|:--------------:|:-------------:|:--------------:|:--------------:|:----------:|
+| Kullanıcı Türü |  Mesai İçinde | Mesai Dışında | Yeni Setup Oluşturma | Malzeme Dolabı | Özel Dolap |
+|:------------|:--------------:|:-------------:|:--------------:|:--------------:|:----------:|
 |Stajyer    | :exclamation:  Yetkin Kullanıcı ile | :exclamation:  Yetkin Kullanıcı ile |  :no_entry:| :no_entry:| :no_entry:|
 |Temel      | :heavy_check_mark: (Sadece Onaylı Düzenekte) | :exclamation: Yetkin Kullanıcı ile | :no_entry:| :no_entry:|  :no_entry:|
 |Yetkin    | :heavy_check_mark: | :exclamation: |  Uzman Kullanıcı Onayı ile |  :no_entry:| Talep ederse |
