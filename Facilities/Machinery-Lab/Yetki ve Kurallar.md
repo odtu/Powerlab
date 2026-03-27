@@ -1,6 +1,43 @@
 # Laboratuvar Kuralları
 
-## Yetki Türleri
+## Yetki Kapsamları:
+
+- **Stajyer Kullanıcı:** Labda çalışmaya yeni başlayan (genelde lisans öğrencileri için) giriş yetki seviyesi. Bu kişiler laboratuvarda ancak temel ya da üstü bir kullanıcı gözetiminde çalışmalıdırlar. Stajyerlik süresince kurallara uymaları ve laboratuvara düzenli katılım sağlamaları koşuluyla temel kullanıcı seviyesi olmak için başvurabilirler.
+
+- **Temel Kullanıcı:** Temel kullanıcı **mesai saatleri içerisinde** labda, sadece onay alınmış deney düzenekleri ve aletler ile tek başına çalışabilir. Mesai saatleri dışında ise yetkin kullanıcılar ile birlikte çalışabilir. Bu kullanıcının mesai saatleri içinde olsa bile, tek başınayken yeni deney düzeneği oluşturmaya, yüksek gerilim (>48V) cihazlar ve elektrik makinalarını kullanmaya ve 3-faz güç kaynaklarını açmaya yetkisi bulunmamaktadır.
+
+- **Yetkin Kullanıcı:** Bu seviyedeki bir kullanıcının laboratuvara mesai saatleri içinde ve dışında erişimi bulunmaktadır. Uzman bir kullanıcıdan onay almak şartıyla yeni deney düzeneği oluşturabilir ve bu amaçla malzeme dolabından, demirbaş malzeme çıkarabilir.
+
+- **Uzman Kullanıcı:** Laboratuvarın genel düzeninden, güvenlik standartlarının uygulanmasından sorumlu kullanıcılardır. Bu kişilerin onayı ve referansıyla kullanım yetkileri verilebilir veya alınabilir. Akademik danışmanlar da uzman kullanıcı statüsündedir. Akademik danışmanlar hariç laboratuvarda en fazla 5 adet uzman kullanıcı tanımlanabilir.
+
+     Kullanıcı Türü   |  Mesai İçinde | Mesai Dışında | Yeni Setup Oluşturma | Malzeme Dolabı | Özel Dolap |
+|:-----------------|:--------------:|:-------------:|:--------------:|:--------------:|:----------:|
+|Stajyer    | :exclamation:  Yetkin Kullanıcı ile | :exclamation:  Yetkin Kullanıcı ile |  :no_entry:| :no_entry:| :no_entry:|
+|Temel      | :heavy_check_mark: (Sadece Onaylı Düzenekte) | :exclamation: Yetkin Kullanıcı ile | :no_entry:| :no_entry:|  :no_entry:|
+|Yetkin    | :heavy_check_mark: | :exclamation: |  Uzman Kullanıcı Onayı ile |  :no_entry:| Talep ederse |
+|Uzman    | :heavy_check_mark: | :exclamation: |  :heavy_check_mark: |  :key: | Talep ederse |
+
+
+## Yetki Tanımlamaları:
+
+- **Stajyer Kullanıcı:**  Laboratuvara bu seviyede giriş yapmak isteyen kişiler, akademik danışmanlarına tercihen kendilerine çalışmalarına eşlik edecek kullanıcılar ile başvurur. Bu aşamada kart yetki tanımlaması yapılabilir ancak kullanıcının labı tek başına kullanım yetkisi olmadığı aktarılır.
+
+- **Temel Kullanıcı:** Stajyer olarak labı aktif kullanan, bu süreçte lab kural ve güvenlik önlemlerine uyan kullanıcılar (tercihen laboratuvarda aktif olarak min 2 ay çalışma sonrası) temel kullanıcı formunu, en az iki yetkin kullanıcı referansıyla, doldurarak yetkin kullanıcı talebinde bulunabilirler.
+
+- **Yetkin Kullanıcı:** Temel kullanıcı olarak minimum 1 dönem geçiren ve bu süreçte laboratuvarı aktif olarak kullanan kişiler yetkin kullanıcı olmak için başvurabilir. Bu kişilerin aşağıdaki yetkinlikte olması ve laboratuvara aktif katkıda bulunması gerekmektedir:
+
+- Güvenlik kurallarına hakimdir ve istisnasız uygular.
+- Laboratuvar giriş çıkış kurallarına uyar, malzemeleri düzenli kullanır
+- Temel kullanıcı olduğu dönemde başka yetkin kullanıcılar ile birlikte çalışmalara katılmış, yüksek riskli sınıfındaki alet ve ekimanları kullanarak tecrübe kazanmıştır.
+
+- **Uzman Kullanıcı:** Uzman kullanıcılar en az 1 dönem labı yetkin kullanıcı olarak kullanmış, tercihen bölümde asistan olan ve laboratuvara aktif katkıda bulunan kullanıcılar arasından akademik danışmanın onayı ile belirlenir. Uzman kullanıcı olmak için:
+
+- Laboratuvara aktif olarak katkıda bulunmak, lab içerisinde güvenlik ve düzen prosedürlerinin uygulanması, gerekirse diğer kullanıcıların uyarılması konusunda aktif görev almak
+- Laboratuvar süreçlerinin iyileştirilmesi konusunda destek olmak gerekmektedir.
+
+
+
+
 
 - **Temel Kullanıcı:** Giriş seviyesi, laba yeni katılan kullanıcının geçmiş eğitim seviyesi/tecrübesine bakılmaksızın başladığı nokta. Bu seviyedeki kullanıcı tek başına laba **mesai saatleri** içerisinde tek başına erişebilir. **Çalışmanın beraber yürütülmesi şartıyla** mesai saati sonrasında (**haftasonları dahil olmak üzere**) yetkin_1 ya da daha üst seviye bir kullanıcı ile **çalışabilir**, bu koşulun dışında **ziyaret** dahil olmak üzere mesai saatleri dışarısında laboratuvara **hiç bir koşulda girmemelidir**. Laboratuvar içerisinde bu seviyede bir kullanıcının herhangi bir cihazı kullanması en az bir yetkin_1 kullanıcının onayından geçmelidir. Lehim yapmak, ölçüm cihazlarının kullanım şekli, alet edevat bilgisinin bu seviyede bir kullanıcıda olup olmadığı bilinmediği için **yapılacak her iş için** mutlaka onay alması gerekmektedir.(Daha önceden kullanıcının lehim yapmış olması bir şeyi değiştirmez, her seferinde onay alması gerekir. Daha önceden benzer setup kurmuş olması bir şeyi değiştirmez, setup ı kurmadan danışması gerekir. Buna el tipi multimetre ile kısa devre testi yapmak da dahil, çünkü bu seviyede bir kullanıcı hatalı çalışan bir ekipmanı bilemeyebilir ya da ekipmanı rastgele bir yerden alıp rastgele bir yere bırakabilir.) 
 
