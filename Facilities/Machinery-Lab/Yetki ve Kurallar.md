@@ -10,6 +10,8 @@
 
 - **Uzman Kullanıcı:** Laboratuvarın genel düzeninden, güvenlik standartlarının uygulanmasından sorumlu kullanıcılardır. Bu kişilerin onayı ve referansıyla kullanım yetkileri verilebilir veya alınabilir. Akademik danışmanlar da uzman kullanıcı statüsündedir. Akademik danışmanlar hariç laboratuvarda en fazla 5 adet uzman kullanıcı tanımlanabilir.
 
+- ** Laboratuvar Sorumlusu**: Uzman kullancılar arasından bir kişi akademik danışman tarafından laboratuvar sorumlusu olarak belirlenir. Laboratuvar sorumlusu labın genel düzenin ve işleyişini koordine eder. Laboratuvarla ilgili dokümanların ve yetki tanımlamalarının güncel tutulmasını sağlar.
+
 | Kullanıcı Türü |  Mesai İçinde | Mesai Dışında | Yeni Setup Oluşturma | Malzeme Dolabı | Özel Dolap |
 |:------------|:--------------:|:-------------:|:--------------:|:--------------:|:----------:|
 |Stajyer    | :exclamation:  Yetkin Kullanıcı ile | :exclamation:  Yetkin Kullanıcı ile |  :no_entry:| :no_entry:| :no_entry:|
@@ -20,24 +22,20 @@
 
 ## Yetki Tanımlamaları:
 
-- **Stajyer Kullanıcı:**  Laboratuvara bu seviyede giriş yapmak isteyen kişiler, akademik danışmanlarına tercihen kendilerine çalışmalarına eşlik edecek kullanıcılar ile başvurur. Bu aşamada kart yetki tanımlaması yapılabilir ancak kullanıcının labı tek başına kullanım yetkisi olmadığı aktarılır.
+- **Stajyer Kullanıcı:**  Laboratuvara ilk kez giriş yetkisi alacak lisans öğrencilerine verilen yetki türüdür. Laboratuvara bu seviyede giriş yapmak isteyen kişiler, akademik danışmanlarına tercihen kendilerine çalışmalarına eşlik edecek yetkin kullanıcılar ile başvurur. İhtiyaç dahilinde kart yetki tanımlaması yapılabilir ancak kullanıcının laba tek başına girme yetkisi olmadığı aktarılır.
 
-- **Temel Kullanıcı:** Stajyer olarak labı aktif kullanan, bu süreçte lab kural ve güvenlik önlemlerine uyan kullanıcılar (tercihen laboratuvarda aktif olarak min 2 ay çalışma sonrası) temel kullanıcı formunu, en az iki yetkin kullanıcı referansıyla, doldurarak yetkin kullanıcı talebinde bulunabilirler.
+- **Temel Kullanıcı:** Stajyer olarak labı aktif kullanan, bu süreçte lab kural ve güvenlik önlemlerine uyan kullanıcılar (tercihen laboratuvarda aktif olarak minimum 2 ay çalışma sonrası) temel kullanıcı formunu, en az iki yetkin kullanıcı referansıyla, doldurarak yetkin kullanıcı yetkilendirme talebinde bulunurlar.
 
-- **Yetkin Kullanıcı:** Temel kullanıcı olarak minimum 1 dönem geçiren ve bu süreçte laboratuvarı aktif olarak kullanan kişiler yetkin kullanıcı olmak için başvurabilir. Bu kişilerin aşağıdaki yetkinlikte olması ve laboratuvara aktif katkıda bulunması gerekmektedir:
+- **Yetkin Kullanıcı:** Temel kullanıcı olarak minimum 1 dönem geçiren ve bu süreçte laboratuvarı aktif olarak ve kurallarına uygun olarak kullanan kişiler yetkin kullanıcı olmak için başvurabilir. Bu kişilerin aşağıdaki yetkinlikte olması ve laboratuvara aktif katkıda bulunması gerekmektedir:
 
 - Güvenlik kurallarına hakimdir ve istisnasız uygular.
-- Laboratuvar giriş çıkış kurallarına uyar, malzemeleri düzenli kullanır
-- Temel kullanıcı olduğu dönemde başka yetkin kullanıcılar ile birlikte çalışmalara katılmış, yüksek riskli sınıfındaki alet ve ekimanları kullanarak tecrübe kazanmıştır.
+- Laboratuvar giriş çıkış kurallarına uyar, malzemeleri ve masasını düzenli kullanır.
+- Temel kullanıcı olduğu dönemde başka yetkin kullanıcılar ile birlikte çalışmalara katılmış, yüksek riskli sınıfındaki alet ve ekipmanları kullanarak tecrübe kazanmıştır.
 
-- **Uzman Kullanıcı:** Uzman kullanıcılar en az 1 dönem labı yetkin kullanıcı olarak kullanmış, tercihen bölümde asistan olan ve laboratuvara aktif katkıda bulunan kullanıcılar arasından akademik danışmanın onayı ile belirlenir. Uzman kullanıcı olmak için:
+- **Uzman Kullanıcı:** Uzman kullanıcılar labda yetkin kullanıcı olarak  en az 1 dönem çalışmış, tercihen bölümde asistan olan ve laboratuvara aktif katkıda bulunan kullanıcılar arasından akademik danışmanın onayı ile belirlenir. Uzman kullanıcı olmak için:
 
 - Laboratuvara aktif olarak katkıda bulunmak, lab içerisinde güvenlik ve düzen prosedürlerinin uygulanması, gerekirse diğer kullanıcıların uyarılması konusunda aktif görev almak
 - Laboratuvar süreçlerinin iyileştirilmesi konusunda destek olmak gerekmektedir.
-
-
-
-
 
 - **Temel Kullanıcı:** Giriş seviyesi, laba yeni katılan kullanıcının geçmiş eğitim seviyesi/tecrübesine bakılmaksızın başladığı nokta. Bu seviyedeki kullanıcı tek başına laba **mesai saatleri** içerisinde tek başına erişebilir. **Çalışmanın beraber yürütülmesi şartıyla** mesai saati sonrasında (**haftasonları dahil olmak üzere**) yetkin_1 ya da daha üst seviye bir kullanıcı ile **çalışabilir**, bu koşulun dışında **ziyaret** dahil olmak üzere mesai saatleri dışarısında laboratuvara **hiç bir koşulda girmemelidir**. Laboratuvar içerisinde bu seviyede bir kullanıcının herhangi bir cihazı kullanması en az bir yetkin_1 kullanıcının onayından geçmelidir. Lehim yapmak, ölçüm cihazlarının kullanım şekli, alet edevat bilgisinin bu seviyede bir kullanıcıda olup olmadığı bilinmediği için **yapılacak her iş için** mutlaka onay alması gerekmektedir.(Daha önceden kullanıcının lehim yapmış olması bir şeyi değiştirmez, her seferinde onay alması gerekir. Daha önceden benzer setup kurmuş olması bir şeyi değiştirmez, setup ı kurmadan danışması gerekir. Buna el tipi multimetre ile kısa devre testi yapmak da dahil, çünkü bu seviyede bir kullanıcı hatalı çalışan bir ekipmanı bilemeyebilir ya da ekipmanı rastgele bir yerden alıp rastgele bir yere bırakabilir.) 
 
@@ -63,8 +61,26 @@
 - **Tez dolabı:** Yukarıdaki yetkilere ek olarak öğrencinin tez çalışmalarında kullanılmak üzere kişisel eşyalar için bir adet kişiye özel dolap ve anahtarı sağlanır.
 
 ---
+## Laboratuvar İş Güvenliği
 
-## Laboratuvar Kurallar
+- **Can Güvenliği**: Elektrik makinaları ve güç elektroniği laboratuvarı yüksek riskli bir yer olup, kullanıcıların bu hassasiyetle yaklaşması gerekmektedir. Temel riskler:
+
+- Elektrik çarpması: Can sağlığı için risk oluşturabilecek gerilim seviyelerinde (> 25 V AC, veya > 60 V DC*, TS EN 60204-1 ve IEC 60364-4-41 standartlarına göre), elektrik çarpma riski.
+- Yangın: Elektrik sistemlerinde oluşabilecek kısa devre kaynaklı, bataryalı sistemlerde (özellikle Lityum piller) gücün kapatılamaması kaynaklı yangın çıkma riski.
+- Fiziksel yaralanma: Hareketli motor aksamları, sivri el aletleri, sıcak havya gibi konularda yaşanabilecek yaralanmalar.
+
+Kullanıcıların bu risklere karşı gerekli bilgilendirmeleri edinmesi ve çalışma alışkanlıklarında istisnasız bir şekilde uygulaması gerekmektedir.
+
+- ** Malzeme Güvenliği**: Laboratuvarda bulunan malzemelerin verimli ve uzun yıllar kullanılmasının sorumluluğu tüm lab kullanıcılarındadır. Bu konuda aşağıdaki maddelerde özen gösterilmesi gerekmektedir.
+
+- Malzeme Yanlış Kullanımı: Elektronik ekipmanların limitleri dahilinde kullanılmaması sonucu oluşan hasarlanma vb. Konular kullanıcı sorumluluğundadır.
+- Malzeme Dağınıklığı: Malzemelerin düzgün depolanmaması, açık bırakılması, aksesuarlarının kaybolması gibi etkenlerin önünde geçilmelidir.
+- Labdan Malzeme Çıkarılması: Laboratuvardan kısa süreli olsa bile ekipman çıkarılması yasaktır. Akademik danışmanın ve lab sorumlusunun izni dahilinde tutanak ile malzeme ödünç verilebilir.
+- Hırsızlık: Lab kapısının açık bırakılması, yetkisiz kişilerin sorgulanmadan laba sokulması gibi nedenlerin yaratacağı malzeme kayıplarının önüne geçilmelidir.
+
+---
+
+## Laboratuvar Kuralları
 
 a) Elektrik makinaları laboratuvarında çalışırken ~genel iş~ *(genel geçer bir iş yapmıyoruz, kullandığımız bağlantı şekilleri genel iş güvenliği kurallarına aykırı, motorlarımız aykırı lafta güzel bir şey ama uygulanabilir bir şey değil bu)* kendimizin ve ekipmanın güvenliği için dikkat edilecektir. Bu amaçla laboratuvar sorumlusu ~ve teknisyen~ tarafından yetkilendirme sonrası yetkilendirilen kişiye bilgilendirme yapılacaktır. Bu tanıtımda aşağıdaki konularda bilgilendirme yapılacaktır:
 
@@ -75,16 +91,17 @@ a) Elektrik makinaları laboratuvarında çalışırken ~genel iş~ *(genel geç
 
 b) ~Yüksek güç gerektiren veya iş güvenliği açısından riskli olabilecek durumlarda ve çalışma ortamında **25 V AC** veya **60 V DC** değerlerini aşan enerjili sistemlerde ve güç katlarında açık temas riski bulunuyorsa, laboratuvarda tek başına çalışılması yasaktır (TS EN 60204-1 ve IEC 60364-4-41). Özellikle mesai saatleri dışında bu konuda hassasiyet gösterilmelidir. (İsmail)~ *(Uygulanabilir değil.)* İlgili deney düzeneğinin oluşturabileceği riskler önceden analiz edilmeli, deneyi yapacak kişi sayısına göre acil durumda yapılması gerekenler önceden düşünülmeli ve gerekli kişi sayısı sağlanmalıdır. Deneyi kurgulayan kişinin kurgusunun üzerinde kişi bulunması durumunda fazla olan kişiler durdukları yerin onayını kurgu sahibine onaylatmaya özen göstermelidir. Kuşku durumunda deneyin mesai saatleri içerisinde yapılmasına özen gösterilmelidir. 
 
-c) Yetki kişiye özeldir. Tanımlı olmayan bir kullanıcı laboratuvara misafir olarak en az bir yetkin kullanıcı eşliğinde alınabilir. Misafir içeride yalnız bırakılamaz, eğer misafir içeride bir işe yardım etmesi amacıyla geldiyse laboratuvar sorumlusundan onay alınması gereklidir. Ziyaret ya da gözlem amaçlı geldiyse onay gerekmez.  
+c) Yetki kişiye özeldir. Tanımlı olmayan bir kullanıcı laboratuvara misafir olarak en az bir yetkin kullanıcı eşliğinde alınabilir. Misafir içeride yalnız bırakılamaz, yetkilendirme yapılmadıysa deneylere katkıda bulunamaz.  
 
 d) Anahtarlar izinsiz kopyalanmayacak, başkasına ödünç verilmeyecektir. Anahtar veya kimlik kartı kaybolmalarında laboratuvar sorumlularına en kısa sürede bilgi verilecektir.
 
-e) Laboratuvar dışına malzeme, ekipman, el takımları vb. çıkarılmayacak, kısa süreli de olsa ödünç verilmeyecektir. Bu tür işlemler ihtiyaç halinde, laboratuvar sorumlusu ve öğretim üyesinin bilgisi dahilinde yapılacaktır. *(Tornavida vs gibi şeyler için istisnai durumlar oluşuyor buna da aslında bir esneklik sağlamamız lazım. C114 e git gel gibi olaylara izin vermek gerekli)*
+e) Laboratuvar dışına malzeme, ekipman, el takımları vb. çıkarılmayacak, kısa süreli de olsa ödünç verilmeyecektir. Bu tür işlemler ihtiyaç halinde, laboratuvar sorumlusu ve öğretim üyesinin bilgisi dahilinde yapılacaktır.
 
 f) Kapı ve dolapların kullanımında aşağıdaki kurallara uyulmalıdır:
 
-- Laboratuvar dış kapısı her zaman kapalı tutulmalıdır, kapı kısa süreli de olsa açık bırakılmamalıdır *(361 Deneyi gibi istisnai durumlar ile ilgili ek lazım, aksi halde kendi kendini ihlal etmek zorunda kalan kural olur)*. Mesai saatleri dışında laboratuvardan çıkılırken kapı ek olarak anahtar ile kilitlenmelidir. Eğer anahtar şifreli dolaptan alındıysa, geri konularak şifre karıştırılmalıdır. *(Karıştırıma işlemi düzgünce yapılmalı)*
-- Malzeme dolapları ihtiyaç duyulan malzemeler alındıktan sonra her zaman kilitli tutulmalıdır. Kullanılan malzemelerin, deney sonrası tekrar uygun dolaba konularak kilitlenmesi kullanıcının sorumluluğundadır. **Bir masada bulunan malzeme masanın kullanıcısının onay olmadan alınmamalıdır.** 
+- Laboratuvar dış kapısı her zaman kapalı tutulmalıdır, kapı kısa süreli de olsa açık bırakılmamalıdır. Mesai saatleri dışında laboratuvardan çıkılırken kapı ek olarak anahtar ile kilitlenmelidir. Eğer anahtar şifreli dolaptan alındıysa, geri konularak şifre karıştırılmalıdır. 
+
+- Malzeme dolapları ihtiyaç duyulan malzemeler alındıktan sonra her zaman kilitli tutulmalıdır. Kullanılan malzemelerin, deney sonrası tekrar uygun dolaba konularak kilitlenmesi kullanıcının sorumluluğundadır.
 
 g) Laboratuvardan son çıkan kişi tüm ışıkları, klimaları ve panodan ilgili masa şalterlerini kapatmakla sorumludur. *(Bazen çıkarken kendimizle alakasız bir şalteri açık görebiliyoruz. Bir beyaz tahta asıp istisnai durumları oraya yazmamız mantıklı olabilir, özel durumlarda açık olan ekipman bildirgesi gibi onun dışında çıkarken açık gördüğümüz bütün ekipmanları kapatalım gibi)*
 
