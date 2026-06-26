@@ -43,5 +43,5 @@
 |Elif Topaloğlu | Keysan  | 06/2027 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |M. Barış Kılıç | Şahin | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
 |Rana Mohammad Adnan | Şahin | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
-|Polat Öztürk | Şahin | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Polat Öztürk | Şahin | 06/2027 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
 |Civan Serhat Çevik| Göl | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
