@@ -11,7 +11,7 @@
 - Bu bilgilendirmeler sonrası lab yetkili hocasına lab eğitiminin alındığına dair bilgi verilir.
 
 
-# Erişim Listesi (2026)
+# Erişim Listesi (2026, güncellenecek)
 
 |      Ad-Soyad    | Yetki Veriliş|Stajyer| Temel  |Yetkin| Uzman|Özel Dolap|
 |:-----------------|:----------:|:-------:|:------:|:----:|:----:|:--------:|
@@ -23,21 +23,25 @@
 
 # Erişim Listesi
 
-|      Ad-Soyad    | Yetki Bitiş Tarihi| Mesai İçinde | Mesai Dışında | Malzeme Dolabı | Özel Dolap |
-|:-----------------|:---------------:|:--------------:|:-------------:|:--------------:|:----------:|
-|Özgür Gülsuna    | 06/2026 |:heavy_check_mark:|:heavy_check_mark: |  :key: |  :key:|
-|Ogün Altun  | 09/2026 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:|  
-|Işık Emir Altunkol | 12/2026 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
-|Yunus Çay  | 10/2025 |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :key: (26)| 
-|Yusuf Basri Yılmaz| 03/2026 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
-|Kemal Parlaktuna | 03/2026 |:heavy_check_mark:| :no_entry:   |  :no_entry:    | :no_entry:|
-|Mohammad Derogarian| 03/2026 |:heavy_check_mark:| :heavy_check_mark:   |  :no_entry:    | :no_entry:|
-|İsmail Macit| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
-|Göktuğ Tonay| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :heavy_check_mark:   | :no_entry:|
-|Arda Kasım| 03/2026 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
-|Kaan Demirkoparan | 12/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
-|Mehmet Emin Taş | 12/2025 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
-|Metin Özdemir | 06/2026 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
-|Sefer İdacı | 06/2027 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
-|Aytunç Evlice | 06/2027 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
-|Elif Topaloğlu | 06/2027 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
+|      Ad-Soyad    | Danışman| Yetki Bitiş Tarihi| Mesai İçinde | Mesai Dışında | Malzeme Dolabı | Özel Dolap |
+|:-----------------|:---------------:|:---------------:|:--------------:|:-------------:|:--------------:|:----------:|
+|Özgür Gülsuna    | Keysan | 12/2026 |:heavy_check_mark:|:heavy_check_mark: |  :key: |  :key:|
+|Ogün Altun  | Keysan | 09/2028 |:heavy_check_mark:|:heavy_check_mark: | :key:   |  :no_entry:|  
+|Işık Emir Altunkol | Keysan | 06/2027 |:heavy_check_mark:|:no_entry:  | :no_entry:  |  :no_entry:|    
+|Yunus Çay  | 06/2027 | Firuzi |:heavy_check_mark:|:heavy_check_mark:  |  :key:   |  :key: (26)| 
+|Yusuf Basri Yılmaz | Keysan | 12/2026 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Kemal Parlaktuna | Göl | 12/2027 |:heavy_check_mark:| :no_entry:   |  :no_entry:    | :no_entry:|
+|Mohammad Derogarian | Karaağaç | 06/2027 |:heavy_check_mark:| :heavy_check_mark:   |  :no_entry:    | :no_entry:|
+|İsmail Macit| 12/2026 | Keysan  |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Göktuğ Tonay| 12/2026 | Keysan  |:heavy_check_mark:| :heavy_check_mark: |  :heavy_check_mark:   | :no_entry:|
+|Arda Kasım | Keysan  | 12/2026 |:heavy_check_mark:| :heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Kaan Demirkoparan | Keysan  | 12/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Mehmet Emin Taş | Göl | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Metin Özdemir | Keysan | 06/2028 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Sefer İdacı | Keysan | 12/2027 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Aytunç Evlice | Keysan | 12/2027 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
+|Elif Topaloğlu | Keysan  | 06/2027 |:heavy_check_mark:|:heavy_check_mark: |  :no_entry:    | :no_entry:|
+|M. Barış Kılıç | Şahin | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Rana Mohammad Adnan | Şahin | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Polat Öztürk | Şahin | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
+|Civan Serhat Çevik| Göl | 06/2027 |:heavy_check_mark:|:no_entry: |  :no_entry:    | :no_entry:|
