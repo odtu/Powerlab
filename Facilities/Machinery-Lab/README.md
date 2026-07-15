@@ -2,7 +2,7 @@
 
 ## Makina Labına Nasıl Erişim Yetkisi Alırım?
 
-- Danışman hocanızla izin gerekliliği ve [yetki kapsamı](./Yetki ve Kurallar.md) konuşulur.
+- Danışman hocanızla izin gerekliliği ve [yetki kapsamı](./Yetki%20ve%20Kurallar.md) konuşulur.
 - Bu klasörde bulunan yetki formu iki nüsha şeklinde düzenlenir.
 - Gerekli imzalar tamamlandıktan sonra, bu nüshalardan birisi laboratuvar sorumlusuna teslim edilir. Diğer kopya ise kullanıcı tarafından saklanır.
 - Form teslimi sonrası laboratuvar sorumlusu hoca tarafından öğrenci kart yetkilendirme işlemi için mail atılır, ve gerekiyorsa kilit dolabı şifresi paylaşılır, malzeme dolap anahtarı verilir. 
@@ -17,7 +17,7 @@
 |Ogün Altun        | Keysan   | 09/2028     | - | - | - |  :star: :heavy_check_mark: |  :key:|
 |Özgür Gülsuna     | Keysan   | 12/2026     | - | - | - |  :heavy_check_mark: |  :key:|
 |İsmail Macit      | Keysan   | 12/2026     | - | - | - |  :heavy_check_mark: |  :key:|
-|Yunus Çay         | Firuzi   | 06/2027     | - | - | :heavy_check_mark: | -  |  :key: + :key: (26)|
+|Yunus Çay         | Firuzi   | 06/2027     | - | - | :heavy_check_mark: | -  |  :key: + (26)|
 |Işık Emir Altunkol| Keysan   | 06/2027     | - | - | :heavy_check_mark: | -  |  :key:|
 |Yusuf Basri Yılmaz| Keysan   | 12/2026     | - | - | :heavy_check_mark: | -  |  -    |
 |Kemal Parlaktuna  | Göl      | 12/2027     | - | - | :heavy_check_mark: | -  |  -    |
