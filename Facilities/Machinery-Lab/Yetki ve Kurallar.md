@@ -86,4 +86,4 @@ g) Laboratuvardan son çıkan kişi tüm ışıkları, klimaları ve panodan ilg
 
 h) Laboratuvar ekipmanlarında veya elektrik tesisatında bir arıza tespit edildiğinde laboratuvar sorumlusu ve teknisyenlerine hemen bilgi verilmelidir.
 
-i) Yukarıdaki maddelere uyulmaması durumunda tüm yetkiler süresiz olarak iptal edilecektir. *(Bu kural da bence uygulanamaz doğrudan değişiklik yapmıyorum. Ama öneri olarak kişiyi uyarmak yeterli olmalı diye düşünüyorum, kuralları doğru koysak dahi ilk sorgulamamız gereken şey çiğnenen kuralın uygulanabilirliği olmalı.)*
+i) Yukarıdaki maddelere uyulmaması durumunda giriş yetkisi iptal edilebilir ya da yetki seviyesi düşürülebilir.
