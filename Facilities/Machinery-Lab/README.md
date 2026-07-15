@@ -29,6 +29,7 @@
 |Elif Topaloğlu    | Keysan   | 06/2027     | - | - | :heavy_check_mark: | -  |  -    |
 |Mohammad Derogarian|Karaağaç | 06/2027     | - | :heavy_check_mark: | - | -  |  -    |
 |Mehmet Emin Taş   | Göl      | 06/2027     | - | :heavy_check_mark: | - | -  |  -    |
+|Kaan Demirkoparan | Keysan   | 12/2028     | - | :heavy_check_mark: | - | -  |  -    |
 |Metin Özdemir     | Keysan   | 12/2028     | - | :heavy_check_mark: | - | -  |  -    |
 |M. Barış Kılıç    | Şahin    | 06/2027     | - | :heavy_check_mark: | - | -  |  -    |
 |Rana M. Adnan     | Şahin    | 06/2027     | - | :heavy_check_mark: | - | -  |  -    |
