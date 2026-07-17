@@ -23,7 +23,6 @@
 |Kemal Parlaktuna  | Göl      | 12/2027     | - | - | :heavy_check_mark: | -  |  -    |
 |Göktuğ Tonay      | Keysan   | 12/2026     | - | - | :heavy_check_mark: | -  |  -    |
 |Arda Kasım        | Keysan   | 06/2027     | - | - | :heavy_check_mark: | -  |  -    |
-|Kaan Demirkoparan | Keysan   | 12/2028     | - | - | :heavy_check_mark: | -  |  -    |
 |Sefer İdacı       | Keysan   | 12/2027     | - | - | :heavy_check_mark: | -  |  -    |
 |Aytunç Evlice     | Keysan   | 12/2027     | - | - | :heavy_check_mark: | -  |  -    |
 |Elif Topaloğlu    | Keysan   | 06/2027     | - | - | :heavy_check_mark: | -  |  -    |
