@@ -1,0 +1,27 @@
+# Tektronix 4 Series B MSO (MSO44B / MSO46B) — Eğitim Notları
+
+NETES eğitiminde alınan kısa notlar.
+
+## Toplama (Acquisition)
+
+- **High Res**: Aşırı örnekleme + donanımsal FIR filtre ile dikey çözünürlüğü artıran toplama modu (düşük örnekleme hızlarında 16 bit'e kadar). Gürültü azalır, karşılığında bant genişliği düşer.
+- **Probe/kanal bant genişliği sınırlama**: Vertical menüsünden bandwidth limit uygulayarak yüksek frekanslı gürültüyü kırpma. Ölçülecek sinyalin bandına göre seçilmeli.
+
+## Görüntüleme
+
+- **Overlay değil "Combine"**: Kanalları aynı görünümde toplarken kullanılan doğru terim/menü **Combine**.
+- **Kanalları sürükleme**: Kanal badge'i sürükleyerek slice'lar arasında taşıma, birleştirme ve sıralama yapılıyor.
+- **FFT değil "Spectrum View"**: Math FFT yerine, frekans domeni için ayrı kontrollere (center frequency, span, RBW) sahip donanım tabanlı Spectrum View kullanılıyor.
+
+## Tetikleme
+
+- **Visual (Logic) Trigger**: Ekran üzerine alan/şekil çizip "içinden geçsin / geçmesin" koşulunu mantıksal olarak standart tetik ile birleştirme.
+- **Act on Trigger / Act on Event**: Tetik oluştuğunda otomatik aksiyon — dalga formu veya ekran görüntüsü kaydetme, toplamayı durdurma, bildirim gönderme vb.
+
+## Bağlantı
+
+- **HDMI**: Arka panelden harici monitöre video çıkışı.
+- **e*Scope**: Cihazın web arayüzü üzerinden tarayıcıdan erişim/kontrol; yerel ağ üzerinden kullanılabiliyor.
+
+---
+*Not: Notlar eğitim sırasında hızlıca alınmıştır; menü isimleri cihazdaki firmware sürümüne göre farklılık gösterebilir.*
