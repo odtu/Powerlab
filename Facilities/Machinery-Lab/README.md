@@ -34,4 +34,5 @@
 |Rana M. Adnan     | Şahin    | 06/2027     | - | :heavy_check_mark: | - | -  |  -    |
 |Polat Öztürk      | Şahin    | 06/2027     | - | :heavy_check_mark: | - | -  |  -    |
 |Civan Serhat Çevik| Göl      | 06/2027     | - | :heavy_check_mark: | - | -  |  -    |
+|Abdülkadir Çenet  | Keysan   | 09/2027     | - | :heavy_check_mark: | - | -  |  -    |
 
