@@ -268,6 +268,7 @@ Follow these steps in order when laying out a board. Before starting, collect ev
 |---|---|
 | Part to part | Never overlapping. Normal library parts have **no courtyard** (by design), so DRC won't catch this — check silkscreen outlines and the 3D view. Only RF/magnetic-sensitive parts (ESP32 antenna, magnetic encoders) carry a courtyard + keepout zone; never place anything inside it. |
 | Pad to pad between neighbouring parts, hand soldering | ≥ 1.0 mm |
+| Parts with Medium/Large footprints (larger hand-solder pads and a silkscreen outline) | Can sit closer than the pad-to-pad rule above: the pads and outline already leave room for the iron. Silkscreen outlines may nearly touch but never overlap. This depends on the user and the design, so ask. |
 | Around QFN / QFP / fine-pitch ICs | ≥ 2 mm clear for iron and rework access |
 | Tall parts (electrolytics, connectors, inductors) | Don't block access to small parts next to them |
 | Smallest passive size | 0603 by default; 0402 only when space forces it |
@@ -283,12 +284,47 @@ Follow these steps in order when laying out a board. Before starting, collect ev
 
 ### 3.3 Routing
 
-Route in this order: critical high-current paths → clocks and high-speed signals → differential pairs → sensitive analog → everything else.
+Route in this order: critical high-current paths → clocks and high-speed signals → differential pairs → sensitive analog → everything else. Pour-net fan-out vias come before all of these, and the power rails (pours) before the signals.
 
 **General**
 - **Keep traces short and direct. Use 45° corners; never use 90°.** No acute angles (they trap etchant), no stubs, and no dangling traces.
 - Don't route traces between fine-pitch pads. Leave pads straight out, then turn.
 - Enable teardrops on pad and via connections (KiCad: Edit → Edit Teardrops). They're free and make the joints stronger.
+
+**Pour nets, power rails and pad connections**
+- **Never route a pour net between pads.** This covers GND, or any net that has a plane or pour.
+  - A pad on a layer with a pour connects through that pour. Don't give every GND pad its own via: it only clutters the board and blocks routing.
+  - Add a via at the pad only in these cases:
+    - **Decoupling caps:** a via at the cap's GND pad (§3.2: plane → via → cap → pin).
+    - **Fine-pitch IC GND pins:** when the pour can't get between the neighbouring pins.
+    - **Boxed-in pads:** a pad the pour can't reach because tracks surround it. Check after the pours are filled: DRC lists these as unconnected.
+  - The only tracks a pour net has are the short stubs from these pads to their vias.
+- **Power rails are copper areas, not traces, even at low current.**
+  - Where it fits, run every supply rail as a polygon or pour:
+    - on the parts layer, between the regulator, its caps and the loads;
+    - or on the power layer (L3) of a 4-layer board.
+  - A pour has the lowest impedance and decouples best. Power pins that sit close together (a regulator with its caps, a cap row) always share one area.
+  - The pour flows around the pads of other nets (e.g. a switch node between them). Check that it stays in one piece.
+  - Where no pour fits, use a track at the Power class width (≥ 0.5 mm) from end to end. Neck down only right at a pin that forces it (a fine-pitch IC pin), and widen again right after it.
+  - Autorouters may ignore net-class widths; Freerouting 2.4.1 does. Check every power track after autorouting.
+- **Enter a pad straight and end at its centre.**
+  - The last segment runs straight into the pad along its axis, square to the edge it crosses, and ends at the pad's centre.
+  - A track that only touches the pad's edge, or clips its corner at an angle, is electrically connected but still wrong. It leaves odd copper shapes and pour slivers.
+  - Use the pad as the junction. Several tracks of one net can meet at the pad centre, or a track can continue from that pad to the next pad of the net. Don't build a T-junction right beside a pad.
+- **No copper islands or slivers next to pads.**
+  - Where a track end, its round cap or a short jog sits beside a pad, the pour fills the gap between the track and the pad's clearance ring. That gap becomes a sliver or an island.
+  - Route the track into the pad centre so it meets the pad cleanly.
+  - Then refill and look at every pad connection.
+  - Pours: remove islands, minimum width ≥ 0.25 mm (§3.5).
+- **Shortest path, fewest corners.**
+  - No detours and no staircases. Approach a pad from the side facing the route, then finish straight into its centre.
+  - Every corner is 45° or an arc. Never 90° or sharper, also where two track widths meet.
+  - No stubs: remove unused neck-downs and dangling ends.
+- **Keep escape room at fine-pitch parts.**
+  - Keep about 1.5 mm in front of every fine-pitch pin free of other nets' tracks, on every layer, and keep that lane free of fan-out vias.
+  - Don't route other nets under a fine-pitch IC until its pins have escaped.
+  - Don't place test points or passives within about 2 mm of a pin row that still has to escape.
+  - Give a fine-pitch part its room from the board edge and from holes, e.g. a QFN row facing a shaft hole.
 
 **High current**
 - **Use polygons/power planes for high-current paths if you can. Otherwise, use a wide trace.** Size width for the current using IPC-2221:
@@ -353,6 +389,7 @@ k = 0.048 (outer layer), 0.024 (inner layer);  width [mil] = A / (1.378 · oz)
 
 - Pads connected to pours use **thermal relief** so they can be soldered. The exception is high-current SMD pads, which connect solid.
 - Remove isolated copper islands, or stitch them to GND with vias. No floating copper.
+- Look at the pour around every pad connection after the fill. A sliver or island between a track and a pad's clearance ring means the track doesn't enter the pad straight at its centre: reroute that end (§3.3).
 - Keep copper roughly balanced between top and bottom (pour both sides) to prevent board warp.
 - Refill all zones (B) before DRC and before generating outputs.
 
@@ -376,6 +413,7 @@ k = 0.048 (outer layer), 0.024 (inner layer);  width [mil] = A / (1.378 · oz)
 - [ ] Decoupling caps right at their IC pins; crystals right at the MCU
 - [ ] No high-speed trace crosses a plane gap; clocks short, with return vias at layer changes
 - [ ] High-current paths sized per §3.3; via counts per §3.4
+- [ ] GND pads reach the pours (vias only at decoupling caps, fine-pitch GND pins and boxed-in pads); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3)
 - [ ] Only through-hole vias, all tented (except thermal pads)
 - [ ] Polarized parts aligned; assembly spacing and fiducials per §3.2
 - [ ] Silkscreen clean; board info, logo and website/QR present
