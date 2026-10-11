@@ -287,7 +287,7 @@ Follow these steps in order when laying out a board. Before starting, collect ev
 
 Lay the copper before routing any signal, in this order:
 1. **Power pads:** give every pad that carries power its copper area.
-2. **Pour nets:** GND (and any other plane net) on the board, with its fan-out vias.
+2. **Pour nets:** GND (and any other plane net) as pours. **No fan-out vias at this stage:** the pads connect through the pour. The only via placed now is at each decoupling cap's GND pad (§3.2).
 3. Then route the tracks (§3.4).
 
 **Power pads get their copper first**
@@ -297,11 +297,10 @@ Lay the copper before routing any signal, in this order:
 
 **Pour nets and power rails**
 - **Never route a pour net between pads.** This covers GND, or any net that has a plane or pour.
-  - A pad on a layer with a pour connects through that pour. Don't give every GND pad its own via: it only clutters the board and blocks routing.
-  - Add a via at the pad only in these cases:
-    - **Decoupling caps:** a via at the cap's GND pad (§3.2: plane → via → cap → pin).
-    - **Fine-pitch IC GND pins:** when the pour can't get between the neighbouring pins.
-    - **Boxed-in pads:** a pad the pour can't reach because tracks surround it. Check after the pours are filled: DRC lists these as unconnected.
+  - A pad on a layer with a pour connects through that pour. **Never fan out GND pads with vias up front, and never give every GND pad its own via:** it only clutters the board and blocks routing.
+  - Before routing, the only GND vias are at **decoupling caps:** a via at the cap's GND pad (§3.2: plane → via → cap → pin).
+  - A fine-pitch IC GND pin next to a GND exposed pad joins the exposed pad straight across the gap, without a via.
+  - **After all routing**, fill the pours and run DRC. A pad the pour still can't reach shows up as unconnected: a pad boxed in by tracks, or a fine-pitch GND pin the pour can't get between its neighbours to. Give only that pad a via, with a short stub.
   - The only tracks a pour net has are the short stubs from these pads to their vias.
 - **Power rails are copper areas, not traces, even at low current.**
   - Where it fits, run every supply rail as a polygon or pour:
@@ -354,7 +353,7 @@ k = 0.048 (outer layer), 0.024 (inner layer);  width [mil] = A / (1.378 · oz)
 
 ### 3.4 Routing
 
-Copper comes first (§3.3): power pads, power rails and pour nets with their fan-out vias. Then route in this order: switching and gate-drive loops → clocks and high-speed signals → differential pairs → sensitive analog → everything else.
+Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-out vias; only decoupling-cap vias). Then route in this order: switching and gate-drive loops → clocks and high-speed signals → differential pairs → sensitive analog → everything else.
 
 **General**
 - **Keep traces short and direct. Use 45° corners; never use 90°.** No acute angles (they trap etchant), no stubs, and no dangling traces.
@@ -375,7 +374,7 @@ Copper comes first (§3.3): power pads, power rails and pour nets with their fan
   - Every corner is 45° or an arc. Never 90° or sharper, also where two track widths meet.
   - No stubs: remove unused neck-downs and dangling ends.
 - **Keep escape room at fine-pitch parts.**
-  - Keep about 1.5 mm in front of every fine-pitch pin free of other nets' tracks, on every layer, and keep that lane free of fan-out vias.
+  - Keep about 1.5 mm in front of every fine-pitch pin free of other nets' tracks, on every layer, and keep that lane free of vias.
   - Don't route other nets under a fine-pitch IC until its pins have escaped.
   - Don't place test points or passives within about 2 mm of a pin row that still has to escape.
   - Give a fine-pitch part its room from the board edge and from holes, e.g. a QFN row facing a shaft hole.
@@ -437,7 +436,7 @@ Copper comes first (§3.3): power pads, power rails and pour nets with their fan
 - [ ] High-current paths sized per §3.3; via counts per §3.5
 - [ ] Every power pad sits in its copper area, laid before the signal routing (§3.3)
 - [ ] No tracks under inductors or transformers; switching tracks not on the same layer as high-current copper; high-speed signals without vias where possible (§3.4)
-- [ ] GND pads reach the pours (vias only at decoupling caps, fine-pitch GND pins and boxed-in pads); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3, §3.4)
+- [ ] GND pads reach the pours (vias only at decoupling caps, plus pads still unconnected after routing); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3, §3.4)
 - [ ] Only through-hole vias, all tented (except thermal pads)
 - [ ] Polarized parts aligned; assembly spacing and fiducials per §3.2
 - [ ] Silkscreen clean; board info, logo and website/QR present
