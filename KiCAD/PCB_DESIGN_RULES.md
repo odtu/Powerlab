@@ -128,7 +128,7 @@ These are the PCBWay quote-form defaults. Staying inside them avoids surcharges.
 
 Cost-driven design habits:
 - Keep boards compact. Price scales with area.
-- Before asking for 2 oz copper, first try wider pours, parallel copper on both outer layers, and via arrays (§3.3, §3.4).
+- Before asking for 2 oz copper, first try wider pours, parallel copper on both outer layers, and via arrays (§3.3, §3.5).
 - Lead-free HASL handles 0.5 mm pitch QFNs and exposed pads fine for prototypes. Propose ENIG only for BGA, pitch below 0.5 mm, or very large exposed pads that must be flat, and ask first.
 
 ### 2.1 Board
@@ -261,6 +261,7 @@ Follow these steps in order when laying out a board. Before starting, collect ev
   - Put the via to the plane at the cap pad, so current flows plane → via → cap → pin. Don't connect the cap through a long trace.
   - Keep the loop (cap → pin → GND pin → cap) as small as possible. Place decoupling before any other passives around the IC.
 - **Crystals and oscillators** go right next to their MCU pins, with their load caps. Don't route traces under a crystal, and surround it with a GND pour.
+- **Gate drivers and magnetics**: place each gate driver so its gate and return tracks reach the switch without crossing the high-current copper, and plan the routes so no track has to pass under an inductor or transformer (§3.4).
 - **Orient polarized components (diodes, LEDs, electrolytic/tantalum caps) the same way** wherever possible, to simplify assembly and inspection. Where possible, put pin 1 of ICs in the same corner.
 - **Leave enough space for pick-and-place and hand soldering:**
 
@@ -282,16 +283,19 @@ Follow these steps in order when laying out a board. Before starting, collect ev
   - Add a local pair diagonally across any part with pitch ≤ 0.5 mm.
 - **Test points:** on every supply rail, GND, and key signals (clocks, resets, communication buses, sense signals). Give each a silkscreen label, and put a GND test point or probe hook near the groups.
 
-### 3.3 Routing
+### 3.3 Copper pours and high-current copper
 
-Route in this order: critical high-current paths → clocks and high-speed signals → differential pairs → sensitive analog → everything else. Pour-net fan-out vias come before all of these, and the power rails (pours) before the signals.
+Lay the copper before routing any signal, in this order:
+1. **Power pads:** give every pad that carries power its copper area.
+2. **Pour nets:** GND (and any other plane net) on the board, with its fan-out vias.
+3. Then route the tracks (§3.4).
 
-**General**
-- **Keep traces short and direct. Use 45° corners; never use 90°.** No acute angles (they trap etchant), no stubs, and no dangling traces.
-- Don't route traces between fine-pitch pads. Leave pads straight out, then turn.
-- Enable teardrops on pad and via connections (KiCad: Edit → Edit Teardrops). They're free and make the joints stronger.
+**Power pads get their copper first**
+- Every pad in a power path sits in a copper area sized for its current. This covers MOSFET drain/source and diode pads, inductor and transformer pads, shunts, bulk and DC-link caps, regulator input/output pads, and the power pins of connectors.
+- Draw these areas before any signal track, so the power path gets the room it needs and the signals route around it.
+- Don't leave a power pad to the router, and don't connect it with a thin track. After the fill, check every power pad: it must sit in its area, solidly connected (high-current SMD pads have no thermal relief, see below).
 
-**Pour nets, power rails and pad connections**
+**Pour nets and power rails**
 - **Never route a pour net between pads.** This covers GND, or any net that has a plane or pour.
   - A pad on a layer with a pour connects through that pour. Don't give every GND pad its own via: it only clutters the board and blocks routing.
   - Add a via at the pad only in these cases:
@@ -307,24 +311,6 @@ Route in this order: critical high-current paths → clocks and high-speed signa
   - The pour flows around the pads of other nets (e.g. a switch node between them). Check that it stays in one piece.
   - Where no pour fits, use a track at the Power class width (≥ 0.5 mm) from end to end. Neck down only right at a pin that forces it (a fine-pitch IC pin), and widen again right after it.
   - Autorouters may ignore net-class widths; Freerouting 2.4.1 does. Check every power track after autorouting.
-- **Enter a pad straight and end at its centre.**
-  - The last segment runs straight into the pad along its axis, square to the edge it crosses, and ends at the pad's centre.
-  - A track that only touches the pad's edge, or clips its corner at an angle, is electrically connected but still wrong. It leaves odd copper shapes and pour slivers.
-  - Use the pad as the junction. Several tracks of one net can meet at the pad centre, or a track can continue from that pad to the next pad of the net. Don't build a T-junction right beside a pad.
-- **No copper islands or slivers next to pads.**
-  - Where a track end, its round cap or a short jog sits beside a pad, the pour fills the gap between the track and the pad's clearance ring. That gap becomes a sliver or an island.
-  - Route the track into the pad centre so it meets the pad cleanly.
-  - Then refill and look at every pad connection.
-  - Pours: remove islands, minimum width ≥ 0.25 mm (§3.5).
-- **Shortest path, fewest corners.**
-  - No detours and no staircases. Approach a pad from the side facing the route, then finish straight into its centre.
-  - Every corner is 45° or an arc. Never 90° or sharper, also where two track widths meet.
-  - No stubs: remove unused neck-downs and dangling ends.
-- **Keep escape room at fine-pitch parts.**
-  - Keep about 1.5 mm in front of every fine-pitch pin free of other nets' tracks, on every layer, and keep that lane free of fan-out vias.
-  - Don't route other nets under a fine-pitch IC until its pins have escaped.
-  - Don't place test points or passives within about 2 mm of a pin row that still has to escape.
-  - Give a fine-pitch part its room from the board edge and from holes, e.g. a QFN row facing a shaft hole.
 
 **High current**
 - **Use polygons/power planes for high-current paths if you can. Otherwise, use a wide trace.** Size width for the current using IPC-2221:
@@ -344,21 +330,7 @@ k = 0.048 (outer layer), 0.024 (inner layer);  width [mil] = A / (1.378 · oz)
 | 5 A | 2.8 mm | 7.3 mm |
 | 10 A | 7.3 mm | use a pour |
 
-  - Above ~3 A, use pours. Stay on 1 oz: share the current between top and bottom copper joined by via arrays (§3.4) before asking for 2 oz.
-
-**High-frequency and clock traces**
-- **Keep high-frequency traces (clocks, SPI clock, switching gate signals, etc.) short, and minimise their current loop (trace + return path).**
-- Every high-speed trace has a solid reference plane directly underneath. When it changes layer, put a GND via right next to the signal via so the return current can follow.
-- Keep other traces ≥ 3× the trace width away from clocks (3W rule). Don't run clocks along the board edge.
-- Put series termination resistors (if used) right at the driver pin.
-
-**Differential pairs** (USB, CAN, RS-485, Ethernet)
-- Route the two lines together at a constant gap, length-matched, on the same layer and without splitting around obstacles.
-- `LAYOUT: 50 Ω` / `90 Ω diff` notes need calculated widths. **Controlled impedance costs extra at PCBWay** (§2.0), so ask before ordering with it. USB full-speed and CAN work fine without it on short runs.
-
-**Ground plane**
-- **On a 4+ layer board, the ground plane is a solid, continuous sheet. Never route a high-speed trace over a split or gap in the ground plane.** It forces the return current into a big loop, causing EMI and signal-integrity failure.
-- On 2-layer boards, keep bottom-side traces short and don't cut the GND pour into islands. If a bottom trace would block the return path of a top-side signal, jump it with vias instead.
+  - Above ~3 A, use pours. Stay on 1 oz: share the current between top and bottom copper joined by via arrays (§3.5) before asking for 2 oz.
 
 **Voltage clearance** (IPC-2221B minimum conductor spacing; used by the HV net class, §2.6)
 
@@ -373,25 +345,75 @@ k = 0.048 (outer layer), 0.024 (inner layer);  width [mil] = A / (1.378 · oz)
 
 - Mains-connected or isolated designs follow IEC 62368-1 / IEC 60664-1 instead, which need much larger distances. Ask the user for the standard and insulation class before laying these out.
 
-### 3.4 Vias
+**Pour quality**
+- Pads connected to pours use **thermal relief** so they can be soldered. The exception is high-current SMD pads, which connect solid.
+- Remove isolated copper islands, or stitch them to GND with vias. No floating copper. Minimum pour width ≥ 0.25 mm.
+- Look at the pour around every pad connection after the fill. A sliver or island between a track and a pad's clearance ring means the track doesn't enter the pad straight at its centre: reroute that end (§3.4).
+- Keep copper roughly balanced between top and bottom (pour both sides) to prevent board warp.
+- Refill all zones (B) before DRC and before generating outputs.
+
+### 3.4 Routing
+
+Copper comes first (§3.3): power pads, power rails and pour nets with their fan-out vias. Then route in this order: switching and gate-drive loops → clocks and high-speed signals → differential pairs → sensitive analog → everything else.
+
+**General**
+- **Keep traces short and direct. Use 45° corners; never use 90°.** No acute angles (they trap etchant), no stubs, and no dangling traces.
+- Don't route traces between fine-pitch pads. Leave pads straight out, then turn.
+- Enable teardrops on pad and via connections (KiCad: Edit → Edit Teardrops). They're free and make the joints stronger.
+
+**Pad connections**
+- **Enter a pad straight and end at its centre.**
+  - The last segment runs straight into the pad along its axis, square to the edge it crosses, and ends at the pad's centre.
+  - A track that only touches the pad's edge, or clips its corner at an angle, is electrically connected but still wrong. It leaves odd copper shapes and pour slivers.
+  - Use the pad as the junction. Several tracks of one net can meet at the pad centre, or a track can continue from that pad to the next pad of the net. Don't build a T-junction right beside a pad.
+- **No copper islands or slivers next to pads.**
+  - Where a track end, its round cap or a short jog sits beside a pad, the pour fills the gap between the track and the pad's clearance ring. That gap becomes a sliver or an island.
+  - Route the track into the pad centre so it meets the pad cleanly.
+  - Then refill and look at every pad connection (§3.3, pour quality).
+- **Shortest path, fewest corners.**
+  - No detours and no staircases. Approach a pad from the side facing the route, then finish straight into its centre.
+  - Every corner is 45° or an arc. Never 90° or sharper, also where two track widths meet.
+  - No stubs: remove unused neck-downs and dangling ends.
+- **Keep escape room at fine-pitch parts.**
+  - Keep about 1.5 mm in front of every fine-pitch pin free of other nets' tracks, on every layer, and keep that lane free of fan-out vias.
+  - Don't route other nets under a fine-pitch IC until its pins have escaped.
+  - Don't place test points or passives within about 2 mm of a pin row that still has to escape.
+  - Give a fine-pitch part its room from the board edge and from holes, e.g. a QFN row facing a shaft hole.
+
+**Switching signals and magnetics**
+- **No tracks under inductors, transformers, chokes or other coils**, on any layer. Their magnetic field couples into a track that passes under the body. Route around the part's outline; only the part's own pads connect to it. A solid GND pour may stay under the part; signal and power tracks may not.
+- **Switching signals don't share a layer with high-current copper.** Gate drive (driver → gate → source/Kelvin return), PWM, bootstrap and switch-node sense tracks run on a layer where that area has no high-current pour. The switching edges couple into the power copper next to them, and the power copper's noise couples back into the gate.
+  - Plan it at placement (§3.2): put the gate driver where its tracks reach the switches without crossing the power copper.
+  - Where a switching track must leave the power layer, run its return beside it and use a signal + return via pair side by side. This rule wins over avoiding vias on fast signals.
+  - If the two can't be separated by layer, tell the user where, and keep the switching track short, never running alongside the high-current copper.
+
+**High-frequency and clock traces**
+- **Keep high-frequency traces (clocks, SPI clock, switching gate signals, etc.) short, and minimise their current loop (trace + return path).**
+- **Avoid vias on high-speed signals if you can**: route each one on a single layer from driver to load. A via adds inductance and breaks the return path.
+- Every high-speed trace has a solid reference plane directly underneath. When it must change layer, put a GND via right next to the signal via so the return current can follow.
+- Keep other traces ≥ 3× the trace width away from clocks (3W rule). Don't run clocks along the board edge.
+- Put series termination resistors (if used) right at the driver pin.
+
+**Differential pairs** (USB, CAN, RS-485, Ethernet)
+- Route the two lines together at a constant gap, length-matched, on the same layer and without splitting around obstacles. No vias if you can; if they must change layer, both lines change together at the same spot.
+- `LAYOUT: 50 Ω` / `90 Ω diff` notes need calculated widths. **Controlled impedance costs extra at PCBWay** (§2.0), so ask before ordering with it. USB full-speed and CAN work fine without it on short runs.
+
+**Ground plane**
+- **On a 4+ layer board, the ground plane is a solid, continuous sheet. Never route a high-speed trace over a split or gap in the ground plane.** It forces the return current into a big loop, causing EMI and signal-integrity failure.
+- On 2-layer boards, keep bottom-side traces short and don't cut the GND pour into islands. If a bottom trace would block the return path of a top-side signal, jump it with vias instead.
+
+### 3.5 Vias
 
 - **Never use blind or buried vias.** Through-hole vias only (they're also outside the standard-price spec).
 - **Use tented vias** (solder mask covers the via). This is also the PCBWay standard option.
   - The one exception is thermal vias inside an exposed pad. There the pad's mask opening leaves them open on the pad side; tent them on the other side.
 - Don't put vias in SMD pads (except exposed/thermal pads). Keep a solder-mask web between a via and a pad so solder can't wick away.
+- No vias on high-speed signals if you can avoid them (§3.4). Where one is needed, a GND via goes right next to it.
 - **Use vias for high-current areas, and copy that copper to the bottom/top layer for heat problems.** The copper on both layers shares current and spreads heat. Via current budget:
   - 0.3 mm via ≈ 1 A, 0.4 mm via ≈ 1.5 A (conservative)
   - Use at least 2 vias on any power layer change. Place them across the current flow, not in a line along it.
 - **Thermal vias** under hot parts and exposed pads: 0.3 mm drill at 1.0–1.2 mm pitch. Use a windowpane paste pattern on large exposed pads.
 - **Stitching vias:** tie GND pours on all layers together with vias about every 5 mm, and densely along board edges and around noisy sections.
-
-### 3.5 Copper pours
-
-- Pads connected to pours use **thermal relief** so they can be soldered. The exception is high-current SMD pads, which connect solid.
-- Remove isolated copper islands, or stitch them to GND with vias. No floating copper.
-- Look at the pour around every pad connection after the fill. A sliver or island between a track and a pad's clearance ring means the track doesn't enter the pad straight at its centre: reroute that end (§3.3).
-- Keep copper roughly balanced between top and bottom (pour both sides) to prevent board warp.
-- Refill all zones (B) before DRC and before generating outputs.
 
 ### 3.6 Silkscreen and board information
 
@@ -412,8 +434,10 @@ k = 0.048 (outer layer), 0.024 (inner layer);  width [mil] = A / (1.378 · oz)
 - [ ] Every `LAYOUT:` note from the schematic is satisfied
 - [ ] Decoupling caps right at their IC pins; crystals right at the MCU
 - [ ] No high-speed trace crosses a plane gap; clocks short, with return vias at layer changes
-- [ ] High-current paths sized per §3.3; via counts per §3.4
-- [ ] GND pads reach the pours (vias only at decoupling caps, fine-pitch GND pins and boxed-in pads); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3)
+- [ ] High-current paths sized per §3.3; via counts per §3.5
+- [ ] Every power pad sits in its copper area, laid before the signal routing (§3.3)
+- [ ] No tracks under inductors or transformers; switching tracks not on the same layer as high-current copper; high-speed signals without vias where possible (§3.4)
+- [ ] GND pads reach the pours (vias only at decoupling caps, fine-pitch GND pins and boxed-in pads); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3, §3.4)
 - [ ] Only through-hole vias, all tented (except thermal pads)
 - [ ] Polarized parts aligned; assembly spacing and fiducials per §3.2
 - [ ] Silkscreen clean; board info, logo and website/QR present
