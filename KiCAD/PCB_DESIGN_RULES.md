@@ -50,6 +50,7 @@ Follow these steps in order when starting a new schematic.
 ### 1.4 Wiring
 
 - **Never connect a pin directly to another pin, or put a pin end directly on a junction.** Each pin gets its own wire segment to the junction. At a 4-way node, all four pins reach the junction dot through wires, like a plus sign of wires, not four legs touching.
+- **Never put a power symbol directly on a pin.** Draw a wire of at least one grid step (2.54 mm) from the pin to the GND or supply symbol, so the connection is visible and the wire takes its net-class colour and width (§1.6).
 - Put a junction dot on every T and cross connection. Wires only cross without a dot when they are not connected.
 - Use the **2.54 mm (100 mil)** schematic grid. Every symbol, pin, wire, label and junction sits on it.
 - Signal flow runs left to right, and power runs top to bottom (higher voltage at the top).
@@ -99,7 +100,7 @@ Set these up in Schematic Setup → Net Classes, so every wire picks up its styl
 - [ ] A4 + PowerLab drawing sheet on every sheet; title block filled, no raw `${...}`
 - [ ] Hierarchical structure, main page with info and images, global labels between sheets
 - [ ] All parts come from PowerLabKiCadLibraries
-- [ ] No pin-to-pin or pin-on-junction connections
+- [ ] No pin-to-pin, pin-on-junction or pin-on-power-symbol connections
 - [ ] Power symbols from KiCad's `power` library; no bare VCC/VDD; every rail named by voltage and domain; GND symbols point down, supplies up
 - [ ] GND and Power net classes set: GND nets blue and thick, supply nets red and thick
 - [ ] `LAYOUT:` notes on every placement- or impedance-critical part
