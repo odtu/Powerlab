@@ -39,7 +39,7 @@ Follow these steps in order when starting a new schematic.
   - images: a block diagram, board render or photo (placed as images in the schematic)
   - the hierarchical sheet symbols for all sub-sheets, arranged as a block diagram
   - revision history, if the project keeps one
-- **Connections between sheets use global net labels.** Local labels are only for nets that stay inside one sheet. Power rails use power symbols (§1.5).
+- **Connections between sheets use global net labels.** Inside a sheet, connect with wires (§1.4); use a local label only where a wire would be too long. Power rails use power symbols (§1.5).
 
 ### 1.3 Components: PowerLabKiCadLibraries only
 
@@ -51,6 +51,13 @@ Follow these steps in order when starting a new schematic.
 
 - **Never connect a pin directly to another pin, or put a pin end directly on a junction.** Each pin gets its own wire segment to the junction. At a 4-way node, all four pins reach the junction dot through wires, like a plus sign of wires, not four legs touching.
 - **Never put a power symbol directly on a pin.** Draw a wire of at least one grid step (2.54 mm) from the pin to the GND or supply symbol, so the connection is visible and the wire takes its net-class colour and width (§1.6).
+- **Draw it like a normal schematic: wires, not net labels, inside a sheet.** Place parts that connect next to each other and join them with wires, so the circuit can be read without searching for matching names. Decoupling capacitors, pull-ups, dividers, RC filters, gate resistors and bootstrap parts sit beside the pin they serve and are wired to it, with a short wire to their own GND or supply symbol. Never put a label at both ends of a connection that a short wire could make.
+- **Use a net label only where a wire would hurt readability:**
+  - the net goes to another sheet (global label, §1.2);
+  - the wire would be long (more than about 10 grid steps, 25 mm) or would cross other wires or symbols;
+  - the net goes to many places across the sheet, such as an I²C or SPI bus.
+- Keep wires short and direct. If a wire gets long, first move the part closer; only if that doesn't work, label both ends instead.
+- A wired net that needs a name (for net classes, test points or simulation) gets **one** label on its wire, not a label at every pin.
 - Put a junction dot on every T and cross connection. Wires only cross without a dot when they are not connected.
 - Use the **2.54 mm (100 mil)** schematic grid. Every symbol, pin, wire, label and junction sits on it.
 - Signal flow runs left to right, and power runs top to bottom (higher voltage at the top).
@@ -99,6 +106,7 @@ Set these up in Schematic Setup → Net Classes, so every wire picks up its styl
 
 - [ ] A4 + PowerLab drawing sheet on every sheet; title block filled, no raw `${...}`
 - [ ] Hierarchical structure, main page with info and images, global labels between sheets
+- [ ] Inside each sheet, parts are wired to each other (decoupling caps, pull-ups, dividers beside their pins); labels only between sheets, on buses, or where a wire would be long
 - [ ] All parts come from PowerLabKiCadLibraries
 - [ ] No pin-to-pin, pin-on-junction or pin-on-power-symbol connections
 - [ ] Power symbols from KiCad's `power` library; no bare VCC/VDD; every rail named by voltage and domain; GND symbols point down, supplies up
