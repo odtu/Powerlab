@@ -44,6 +44,7 @@ Follow these steps in order when starting a new schematic.
 ### 1.3 Components: PowerLabKiCadLibraries only
 
 - **Every** symbol and footprint comes from https://github.com/odtu/PowerLabKiCadLibraries. Don't use KiCad's stock libraries or project-local libraries.
+- **Exception: power symbols come from KiCad's built-in `power` library** (Place → Power Symbols): `power:GND`, `power:+3V3`, `power:+5V`, `power:VBUS`, `power:PWR_FLAG` and so on. They are net markers, not parts. Never make a lab or project library of power symbols.
 - If a part isn't in the repo, **stop and tell the user**. The part is added to PowerLabKiCadLibraries first (symbol + footprint + 3D model), then used. Never silently substitute a "similar" part or a stock-library part.
 
 ### 1.4 Wiring
@@ -59,6 +60,7 @@ Follow these steps in order when starting a new schematic.
 - Grounds get separate names only when they really are separate domains: `GND`, `PGND`, `AGND`, `GND_ISO1`.
 - Why: layout rules (net classes, widths, clearances) are assigned by net name, so the names must say what the net is.
 - Signal nets are UPPER_SNAKE_CASE and describe the function: `PHASE_A`, `GATE_AH`, `ISENSE_A_P` / `ISENSE_A_N`, `PWM_AH`, `NFAULT` (active-low prefix `N`).
+- **Place rails with KiCad's `power` symbols** (§1.3). A power symbol's Value is its net name, so for a rail with no stock symbol, place the closest one and change its Value: `power:+3V3` → `+3V3_MCU`, `power:+5V` → `+5V_SYS`, `power:GND` → `PGND`.
 - **GND symbols always point down. VCC and other supply symbols always point up.** Never rotate them sideways.
 
 ### 1.6 Net classes and power-net styling
@@ -98,7 +100,7 @@ Set these up in Schematic Setup → Net Classes, so every wire picks up its styl
 - [ ] Hierarchical structure, main page with info and images, global labels between sheets
 - [ ] All parts come from PowerLabKiCadLibraries
 - [ ] No pin-to-pin or pin-on-junction connections
-- [ ] No bare VCC/VDD; every rail named by voltage and domain; GND symbols point down, supplies up
+- [ ] Power symbols from KiCad's `power` library; no bare VCC/VDD; every rail named by voltage and domain; GND symbols point down, supplies up
 - [ ] GND and Power net classes set: GND nets blue and thick, supply nets red and thick
 - [ ] `LAYOUT:` notes on every placement- or impedance-critical part
 - [ ] Clean text: only Reference + Value, no unnecessary ratings, no overlaps
