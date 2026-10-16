@@ -328,7 +328,7 @@ Lay the copper before routing any signal, in this order:
   - A pour has the lowest impedance and decouples best. Power pins that sit close together (a regulator with its caps, a cap row) always share one area.
   - The pour flows around the pads of other nets (e.g. a switch node between them). Check that it stays in one piece.
   - Where no pour fits, use a track at the Power class width (≥ 0.5 mm) from end to end. Neck down only right at a pin that forces it (a fine-pitch IC pin), and widen again right after it.
-  - Autorouters may ignore net-class widths; Freerouting 2.4.1 does. Check every power track after autorouting.
+  - Check every power track's width after routing.
 
 **High current**
 - **Use polygons/power planes for high-current paths if you can. Otherwise, use a wide trace.** Size width for the current using IPC-2221:
@@ -381,15 +381,17 @@ Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-ou
 
 **Pad connections**
 - **Enter a pad straight and end at its centre.**
-  - The last segment runs straight into the pad along its axis, square to the edge it crosses, and ends at the pad's centre.
+  - The last segment runs straight into the pad and ends at the pad's centre: along its axis, square to the edge it crosses, or at 45° straight to the centre where the pad isn't fine pitch. Don't add a bend just before the pad only to come in square.
   - A track that only touches the pad's edge, or clips its corner at an angle, is electrically connected but still wrong. It leaves odd copper shapes and pour slivers.
   - Use the pad as the junction. Several tracks of one net can meet at the pad centre, or a track can continue from that pad to the next pad of the net. Don't build a T-junction right beside a pad.
+  - **No duplicate tracks.** Never run a second track of a net beside or on top of one it already has: join the existing track (a T-junction away from the pads) or the pad. Two tracks of a net leave a pad in different directions.
 - **No copper islands or slivers next to pads.**
   - Where a track end, its round cap or a short jog sits beside a pad, the pour fills the gap between the track and the pad's clearance ring. That gap becomes a sliver or an island.
   - Route the track into the pad centre so it meets the pad cleanly.
   - Then refill and look at every pad connection (§3.3, pour quality).
 - **Shortest path, fewest corners.**
   - No detours and no staircases. Approach a pad from the side facing the route, then finish straight into its centre.
+  - A track bends only where something forces it: no wiggles round pads, no loops or U-turns round a via or pad.
   - Every corner is 45° or an arc. Never 90° or sharper, also where two track widths meet.
   - No stubs: remove unused neck-downs and dangling ends.
 - **Keep escape room at fine-pitch parts.**
