@@ -46,6 +46,9 @@ Follow these steps in order when starting a new schematic.
 - **Every** symbol and footprint comes from https://github.com/odtu/PowerLabKiCadLibraries. Don't use KiCad's stock libraries or project-local libraries.
 - **Exception: power symbols come from KiCad's built-in `power` library** (Place → Power Symbols): `power:GND`, `power:+3V3`, `power:+5V`, `power:VBUS`, `power:PWR_FLAG` and so on. They are net markers, not parts. Never make a lab or project library of power symbols.
 - If a part isn't in the repo, **stop and tell the user**. The part is added to PowerLabKiCadLibraries first (symbol + footprint + 3D model), then used. Never silently substitute a "similar" part or a stock-library part.
+- **Place the library part as it is.** Each lab symbol is one orderable part: its name says which one (`22 µF 100V`), its Value is the plain value (`22 µF`), and its ratings, MPN, manufacturer and distributor numbers are fields of their own. When placing it, don't pass a value or footprint: the part keeps the library's Value and every library field. Never type a rating, package or tolerance into the Value, and never make a project or new library symbol for a part the library already has. A different value or rating is a different lab symbol: pick that one, or replace the part with it.
+- After placing, Symbol Properties must list the library's fields (Manufacturer Number, Voltage Rating, …). If a placed part shows only Reference, Value, Footprint, Datasheet and Description, update it from the library (KiCad: Tools → Update Symbols from Library; kicad MCP: `update_symbol_from_library`): that adds the missing fields and puts back the library's Value.
+- **Large ICs are split into units.** A microcontroller, DSP, FPGA or any IC with more than about 40 pins is a multi-unit symbol, one unit per function, e.g. power and ground, clock and reset, debug, analog inputs, comparators/PGAs, and GPIO/peripheral banks. Place each unit next to the circuit it serves, on its sheet. If the library symbol is one big block, stop and tell the user: it is split into units in PowerLabKiCadLibraries first, then used. Smaller ICs such as a gate driver stay one unit.
 
 ### 1.4 Wiring
 
@@ -84,6 +87,7 @@ Set these up in Schematic Setup → Net Classes, so every wire picks up its styl
 
 - These are the same net classes as §2.6, so the PCB rules stay attached. Give the GND class the Power track/clearance values.
 - The patterns rely on the net names in §1.5.
+- **Set them up when the project is created, before drawing any wire.** With the kicad MCP, `create_netclass` with `projectPath` does it without a board: `name: "GND", patterns: ["*GND*"], schematicColor: "#0000FF", wireWidth: 0.3` and `name: "Power", patterns: ["+*", "-*", "VBUS*"], schematicColor: "#FF0000", wireWidth: 0.3`, plus the track and clearance values from §2.6; then reopen the schematic (File → Revert) so KiCad reads them. Check that a GND wire is blue and thick.
 
 ### 1.7 Layout notes on the schematic
 
@@ -97,8 +101,8 @@ Set these up in Schematic Setup → Net Classes, so every wire picks up its styl
 
 ### 1.8 Clean text
 
-- Show only **Reference** and **Value**. Keep every other field (Footprint, MPN, Manufacturer, Datasheet, …) in the symbol but hidden.
-- **Don't show extra value details** such as tolerance, voltage rating, power rating or package, *unless* they're what make the part specific. Show them for a 1 % / 2 W current shunt, a 100 V DC-link capacitor, or a 0.1 % divider resistor. A generic 10 k pull-up is just `10k`.
+- Show **Reference**, **Value** and the key ratings the library symbol already shows (a capacitor's voltage rating, a resistor's power and tolerance, an inductor's current…). Keep every other field (Footprint, MPN, Manufacturer, Datasheet, …) in the symbol but hidden. Visibility comes from the library: don't hide its ratings and don't show other fields.
+- **Ratings are fields, never part of the Value.** A 100 V DC-link capacitor reads `22 µF` with `100V` under it from its Voltage Rating field, not `22 µF 100V`. A generic 10 k pull-up is just `10 kOhm`.
 - No overlapping text. References and values never cross each other, wires or symbol bodies. Autoplace the fields, then check visually.
 - All text reads horizontally. Keep reference and value on the same side of each symbol, consistently.
 
@@ -107,12 +111,13 @@ Set these up in Schematic Setup → Net Classes, so every wire picks up its styl
 - [ ] A4 + PowerLab drawing sheet on every sheet; title block filled, no raw `${...}`
 - [ ] Hierarchical structure, main page with info and images, global labels between sheets
 - [ ] Inside each sheet, parts are wired to each other (decoupling caps, pull-ups, dividers beside their pins); labels only between sheets, on buses, or where a wire would be long
-- [ ] All parts come from PowerLabKiCadLibraries
+- [ ] All parts come from PowerLabKiCadLibraries, placed with all their library fields and the library's Value (no ratings typed into the Value)
+- [ ] MCUs and other large ICs (> ~40 pins) placed as multi-unit symbols, each unit beside the circuit it serves
 - [ ] No pin-to-pin, pin-on-junction or pin-on-power-symbol connections
 - [ ] Power symbols from KiCad's `power` library; no bare VCC/VDD; every rail named by voltage and domain; GND symbols point down, supplies up
-- [ ] GND and Power net classes set: GND nets blue and thick, supply nets red and thick
+- [ ] GND and Power net classes set with their patterns: GND wires blue and 0.3 mm, supply wires red and 0.3 mm (look at a rendered sheet)
 - [ ] `LAYOUT:` notes on every placement- or impedance-critical part
-- [ ] Clean text: only Reference + Value, no unnecessary ratings, no overlaps
+- [ ] Clean text: Reference, Value and the library's visible ratings only, no overlaps
 - [ ] Every unused pin has `no_connect`, PWR_FLAGs placed, annotation complete, **ERC 0 errors**
 
 ---
