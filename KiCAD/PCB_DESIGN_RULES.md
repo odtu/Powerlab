@@ -270,6 +270,8 @@ Follow these steps in order when laying out a board. Before starting, collect ev
 
 ### 3.2 Placement
 
+Place block by block, in this order: fixed parts (§3.1) → power stage and hot loops → each IC with its decoupling caps first, then its other pin passives → everything else. Finish each block, connections and ratsnest included (below), before starting the next.
+
 - **Separate the analog, digital and power sections physically** to avoid interference. Power enters near its connector and flows in one direction. Sensitive analog (references, ADC inputs, sensor front-ends) is placed furthest from switching parts and high-current paths.
 - **Place similar components together**, block by block, matching the schematic sheets. For example, keep the whole power supply section together. KiCad can select all parts from one schematic sheet at once.
 - **Decoupling capacitors go right next to the VCC/GND pins of every IC. This is an extremely important rule.**
@@ -287,14 +289,25 @@ Follow these steps in order when laying out a board. Before starting, collect ev
 - **TVS and ESD diodes go at the connector, not at the IC.** The line runs connector → TVS pad → protected IC: through the TVS pad without a stub, and with no via between the connector and the TVS. The TVS GND pad goes straight into the GND pour with a via right at the pad (two or more for surge parts). Keep unprotected tracks away from the protected ones.
 - **Radio modules (ESP32, Bluetooth, Wi-Fi) and antennas:** put the antenna end at the board edge, overhanging it where the module datasheet shows that. No copper on any layer under the antenna or inside its keepout. Keep metal parts, screws, batteries, tall connectors and cables at least 10 mm from the antenna (Espressif asks for 15 mm inside the enclosure), and keep switching converters, inductors and crystals away from it. Modules with a u.FL or SMA antenna connector don't need the keepout.
 - **Orient polarized components (diodes, LEDs, electrolytic/tantalum caps) the same way** wherever possible, to simplify assembly and inspection. Where possible, put pin 1 of ICs in the same corner.
-- **Leave enough space for pick-and-place and hand soldering:**
+
+**Place passives by their connections.** A layout that looks tidy from a distance can still have half its passives turned the wrong way or in each other's places. Placement isn't done until every part passes these:
+- **On the right side of its IC, in pin order.** A passive serving an IC pin sits on the side of the IC where that pin is, next to it. A row of such parts follows the order of the pins it serves, so their tracks run side by side and never cross.
+- **Pads face their connections.** Turn every 2-pad part so the pad on the IC pin's net faces that pin, and the other pad faces where it goes (the GND via or pour, the supply, the next part of a chain). If turning it 180° makes its airwires shorter or uncrossed, turn it.
+- **Chains in signal order.** A divider, RC filter, LED + resistor, gate resistor + pull-down or snubber is laid out in the order the signal flows: source → R → node → C/R → GND. The node that goes to the IC pin is the pad nearest that pin; the GND end is the far end, at its via.
+- **Decoupling caps:** the supply pad faces the VDD pin; the GND pad faces that pin's GND (the GND pin next to it or the exposed pad), with its via at the GND pad.
+- **Rows of like parts** (decaps, divider banks, pull-ups) share one orientation, aligned, with the same net on the same side, e.g. all GND pads in one line, so the GND pour or a via row serves them all.
+- **Swap parts that are in each other's place.** If two parts' airwires cross, or one part's airwire runs past another part to reach its pin, swap them. Two caps on one rail can take either place; a part's net decides its place, not its reference.
+- **Check the ratsnest after each block,** before going on: no airwire crossings inside the block, no airwire jumping over another part of the block, every airwire short. Measure with `get_ratsnest` / `estimate_airwire_lengths`, and look at a close-up (`powerlab-visual-review`). Then try a 180° turn or a swap for each passive, and keep what shortens the airwires.
+
+**Room for assembly** (`check_part_spacing` measures it; library parts have no courtyard, so DRC can't):
 
 | Item | Rule |
 |---|---|
-| Part to part | Never overlapping. Normal library parts have **no courtyard** (by design), so DRC won't catch this — check silkscreen outlines and the 3D view. Only RF/magnetic-sensitive parts (ESP32 antenna, magnetic encoders) carry a courtyard + keepout zone; never place anything inside it. |
-| Pad to pad between neighbouring parts, hand soldering | ≥ 1.0 mm |
-| Parts with Medium/Large footprints (larger hand-solder pads and a silkscreen outline) | Can sit closer than the pad-to-pad rule above: the pads and outline already leave room for the iron. Silkscreen outlines may nearly touch but never overlap. This depends on the user and the design, so ask. |
-| Around QFN / QFP / fine-pitch ICs | ≥ 2 mm clear for iron and rework access |
+| Part to part | Never overlapping, bodies included. Only RF/magnetic-sensitive parts (ESP32 antenna, magnetic encoders) carry a courtyard + keepout zone; nothing goes inside it. |
+| Pad to pad between neighbouring parts | **Machine assembly: ≥ 0.5 mm** (PCBWay handles 0.25 mm; 0.5 mm leaves room for rework). **Hand soldering: ≥ 1.0 mm.** `design-requirements.md` says which. |
+| Around QFN / QFP / fine-pitch ICs | Parts not connected to the IC: ≥ 2 mm from its pins. Its own decoupling caps and pin passives sit right at their pins (≥ 0.5 mm), leaving the escape lanes of the other pins free (§3.4). |
+| Keep-out areas | Apply to **both sides** unless the requirement says one side only; ask if it's unclear. |
+| Through pads of a part on the other side | Thermal vias in a MOSFET or regulator pad and THT pins are copper on both sides: no pad of another net on them, and nothing within the pad-to-pad rule. |
 | Tall parts (electrolytics, connectors, inductors) | Don't block access to small parts next to them |
 | Smallest passive size | 0603 by default; 0402 only when space forces it |
 | Part side | All SMD on **top** where possible (single-sided assembly is cheaper). THT parts all from one side. |
@@ -390,10 +403,7 @@ Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-ou
   - A track that only touches the pad's edge, or clips its corner at an angle, is electrically connected but still wrong. It leaves odd copper shapes and pour slivers.
   - Use the pad as the junction. Several tracks of one net can meet at the pad centre, or a track can continue from that pad to the next pad of the net. Don't build a T-junction right beside a pad.
   - **No duplicate tracks.** Never run a second track of a net beside or on top of one it already has: join the existing track (a T-junction away from the pads) or the pad. Two tracks of a net leave a pad in different directions.
-- **No copper islands or slivers next to pads.**
-  - Where a track end, its round cap or a short jog sits beside a pad, the pour fills the gap between the track and the pad's clearance ring. That gap becomes a sliver or an island.
-  - Route the track into the pad centre so it meets the pad cleanly.
-  - Then refill and look at every pad connection (§3.3, pour quality).
+- **No copper islands or slivers next to pads.** A track end, round cap or jog beside a pad leaves a pour sliver or island between it and the pad's clearance ring; entering straight at the centre avoids it (check after the fill, §3.3).
 - **Shortest path, fewest corners.**
   - No detours and no staircases. Approach a pad from the side facing the route, then finish straight into its centre.
   - A track bends only where something forces it: no wiggles round pads, no loops or U-turns round a via or pad.
@@ -444,7 +454,7 @@ Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-ou
 
 ### 3.6 Silkscreen and board information
 
-- Reference designators: readable, in at most two orientations (0° and 90°), never on pads or under parts. Use the minimum sizes from §2.4.
+- Reference designators: readable, in at most two orientations (0° and 90°), never on pads, other outlines or under parts, and unmistakably next to their own part (in a row, all above or all below). Use the minimum sizes from §2.4; lab footprints print the label as a `${REFERENCE}` silkscreen text, not the Reference field. Where a dense block has no room, a short group label (e.g. `R14–R21`) or the fab layer is better than labels on top of each other.
 - Polarity marks, pin-1 markers and diode bands must stay visible after assembly (outside the part body).
 - Label connector pins and signals. Show voltage and polarity at every power input (e.g. `+24V  GND`, `+  −`).
 - **Put the board information on every board:**
@@ -468,11 +478,11 @@ Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-ou
 - [ ] No tracks under inductors or transformers; switching tracks not on the same layer as high-current copper; high-speed signals without vias where possible (§3.4)
 - [ ] GND pads reach the pours (vias only at decoupling caps, plus pads still unconnected after routing); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3, §3.4)
 - [ ] Only through-hole vias, all tented (except thermal pads)
-- [ ] Polarized parts aligned; assembly spacing and fiducials per §3.2
+- [ ] Passives placed by their connections: pads facing their pins, rows in pin order, chains in signal order, no crossing airwires inside a block (§3.2)
+- [ ] Polarized parts aligned; assembly spacing, keep-outs (both sides) and fiducials per §3.2 (`check_part_spacing` clean)
 - [ ] Silkscreen clean; board info, logo and website/QR present
 - [ ] 3D viewer: no part collisions, connectors facing out, polarities right
-- [ ] Print the layout 1:1 on paper and check footprints against the real parts
-- [ ] Gerbers checked in the Gerber viewer before ordering
+- [ ] For the user before ordering: print the layout 1:1 on paper and check footprints against the real parts; check the Gerbers in a Gerber viewer
 - [ ] Outputs for PCBWay:
   - fabrication: Gerber RS-274X + Excellon drill files, zipped
   - assembly: BOM (`.xlsx`/`.csv` with reference, quantity, MPN, manufacturer, package, SMD/THT) and a position (centroid) file with SMD parts, X/Y, rotation and side, plus an assembly drawing if anything is unusual
