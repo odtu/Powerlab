@@ -14,6 +14,7 @@ Sources: https://www.pcbway.com/capabilities.html and the quote form at https://
 - Every numeric rule has two columns: **PCBWay min** (the manufacturing limit, already capped at the standard-price spec) and **Lab default** (what to actually use). Design to the lab default. Go below it only locally, only when the part forces it (e.g. fine-pitch pads), and never below the PCBWay min.
 - When two rules conflict, the stricter one wins. A project's own `CLAUDE.md` or README can override these; it wins over this file.
 - If a design can't meet a rule, don't silently break it. Tell the user which rule, where, and why.
+- **Placement distances are targets, not limits.** "Within 2.5 mm", "as close as the layout allows" and the like mean as close as you can. If meeting one would push other parts away from their own pins, go a little further (e.g. 3 mm instead of 2.5 mm) and keep the whole placement short. Fab and assembly limits (§2, "Room for assembly" in §3.2) and keep-out areas stay hard limits.
 - Copper weight changes the limits. Always confirm the copper weight (outer and inner) before setting constraints.
 
 ---
@@ -270,13 +271,18 @@ Follow these steps in order when laying out a board. Before starting, collect ev
 
 ### 3.2 Placement
 
-Place block by block, in this order: fixed parts (§3.1) → power stage and hot loops → each IC with its decoupling caps first, then its other pin passives → everything else. Finish each block, connections and ratsnest included (below), before starting the next.
+Place block by block, in this order: fixed parts (§3.1) → power stage and hot loops → each IC with its decoupling caps first, then its other pin passives → everything else. Finish each block, connections and ratsnest included (below), before starting the next. Silkscreen and labels come last, after the whole placement (§3.6).
+
+**Short connections come first.** Put each part where its connections are shortest, and pack the parts as tightly as assembly allows ("Room for assembly", below). Short connections need short tracks and few vias, and leave room for the rest of the routing. A block that looks uneven but has short airwires is better than a tidy grid with long ones.
+- **Use both sides** when the board has parts on both. A passive may go on the other side, right under the pin it serves, when that's shorter than any place on the IC's own side. That includes decoupling caps when the IC's side has no room at that pin. Where a rule allows no via between a part and its pin (bootstrap caps, hot-loop caps), keep that part on the pin's side.
+- **Stack blocks that talk to each other** on the two sides: e.g. the gate driver under the MCU or under the half bridge, the MOSFETs under their power pours. Their connections are then a via long.
+- **Rotations follow the board.** On a rectangular board, turn parts to 0°, 90°, 180° or 270°. On a round board, parts may follow the circle (along its radius or its tangent where they sit); don't force them into 45° steps there.
 
 - **Separate the analog, digital and power sections physically** to avoid interference. Power enters near its connector and flows in one direction. Sensitive analog (references, ADC inputs, sensor front-ends) is placed furthest from switching parts and high-current paths.
-- **Place similar components together**, block by block, matching the schematic sheets. For example, keep the whole power supply section together. KiCad can select all parts from one schematic sheet at once.
+- **Place similar components together**, block by block, matching the schematic sheets. For example, keep the whole power supply section together. KiCad can select all parts from one schematic sheet at once. Inside a block, each part goes where its connections are, not into a neat grid.
 - **Decoupling capacitors go right next to the VCC/GND pins of every IC. This is an extremely important rule.**
   - One cap per supply pin. The smallest value goes closest to the pin.
-  - Distance: each 100 nF cap within about 2.5 mm of its pin; bulk caps (µF) within about 25 mm of the IC. A layout recommendation in the IC's datasheet wins.
+  - Distance: each 100 nF cap as close to its pin as you can, about 2.5 mm as the target (3 mm is fine when closer would push other parts out of place); bulk caps (µF) within about 25 mm of the IC. A layout recommendation in the IC's datasheet wins.
   - Put the via to the plane at the cap pad, so current flows plane → via → cap → pin. Don't connect the cap through a long trace.
   - Keep the loop (cap → pin → GND pin → cap) as small as possible. Place decoupling before any other passives around the IC.
 - **Crystals and oscillators** go right next to their MCU pins (within about 10 mm, on the same side), with their load caps beside the crystal, placed symmetrically. Don't route any track under a crystal or its load caps, on any layer, and surround it with a GND pour.
@@ -303,9 +309,9 @@ Place block by block, in this order: fixed parts (§3.1) → power stage and hot
 
 | Item | Rule |
 |---|---|
-| Part to part | Never overlapping, bodies included. Only RF/magnetic-sensitive parts (ESP32 antenna, magnetic encoders) carry a courtyard + keepout zone; nothing goes inside it. |
+| Part to part | Never overlapping, bodies included. Only RF/magnetic-sensitive parts (ESP32 antenna, magnetic encoders) carry a courtyard + keepout zone. Nothing goes inside an antenna keepout. For a magnetic encoder, the requirements say what may go inside (often small passives, never switching parts, magnetics, shunts or power copper). |
 | Pad to pad between neighbouring parts | **Machine assembly: ≥ 0.5 mm** (PCBWay handles 0.25 mm; 0.5 mm leaves room for rework). **Hand soldering: ≥ 1.0 mm.** `design-requirements.md` says which. |
-| Around QFN / QFP / fine-pitch ICs | Parts not connected to the IC: ≥ 2 mm from its pins. Its own decoupling caps and pin passives sit right at their pins (≥ 0.5 mm), leaving the escape lanes of the other pins free (§3.4). |
+| Around QFN / QFP / fine-pitch ICs | Parts not connected to the IC: about 2 mm from its pins, closer where the escape lanes of its pins stay free. Its own decoupling caps and pin passives sit right at their pins (≥ 0.5 mm), leaving the escape lanes of the other pins free (§3.4). |
 | Keep-out areas | Apply to **both sides** unless the requirement says one side only; ask if it's unclear. |
 | Through pads of a part on the other side | Thermal vias in a MOSFET or regulator pad and THT pins are copper on both sides: no pad of another net on them, and nothing within the pad-to-pad rule. |
 | Tall parts (electrolytics, connectors, inductors) | Don't block access to small parts next to them |
@@ -454,6 +460,8 @@ Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-ou
 
 ### 3.6 Silkscreen and board information
 
+Do the silkscreen after the placement is finished. Don't move parts for their labels while placing; place for the connections, then fit the labels.
+
 - Reference designators: readable, in at most two orientations (0° and 90°), never on pads, other outlines or under parts, and unmistakably next to their own part (in a row, all above or all below). Use the minimum sizes from §2.4; lab footprints print the label as a `${REFERENCE}` silkscreen text, not the Reference field. Where a dense block has no room, a short group label (e.g. `R14–R21`) or the fab layer is better than labels on top of each other.
 - Polarity marks, pin-1 markers and diode bands must stay visible after assembly (outside the part body).
 - Label connector pins and signals. Show voltage and polarity at every power input (e.g. `+24V  GND`, `+  −`).
@@ -478,7 +486,7 @@ Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-ou
 - [ ] No tracks under inductors or transformers; switching tracks not on the same layer as high-current copper; high-speed signals without vias where possible (§3.4)
 - [ ] GND pads reach the pours (vias only at decoupling caps, plus pads still unconnected after routing); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3, §3.4)
 - [ ] Only through-hole vias, all tented (except thermal pads)
-- [ ] Passives placed by their connections: pads facing their pins, rows in pin order, chains in signal order, no crossing airwires inside a block (§3.2)
+- [ ] Parts placed for short connections, on both sides where that's shorter; passives with pads facing their pins, rows in pin order, chains in signal order, no crossing airwires inside a block (§3.2)
 - [ ] Polarized parts aligned; assembly spacing, keep-outs (both sides) and fiducials per §3.2 (`check_part_spacing` clean)
 - [ ] Silkscreen clean; board info, logo and website/QR present
 - [ ] 3D viewer: no part collisions, connectors facing out, polarities right
