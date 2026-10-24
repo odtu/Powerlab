@@ -224,7 +224,9 @@ Green, red, yellow and blue mask, and white or black silk, cost nothing extra.
 
 Defaults for a **1 oz** board. For 2 oz or 3 oz, take the values from the tables above.
 
-The board minimums are the **PCBWay standard-price floor** (§2.2), so DRC only rejects what can't be made without a surcharge. The **net classes** below carry the lab defaults, and that's what tracks are routed at. A track may go below the class width, down to 0.15 mm, only locally where a part forces it, e.g. escaping between fine-pitch pads (QFN, ESP32 module, USB-C).
+The board minimums are the **PCBWay standard-price floor** (§2.2), so DRC only rejects what can't be made without a surcharge. The **net classes** below carry the lab defaults, and that's what tracks are routed at. Signal tracks are 0.15 mm (the Default class); give a signal more only where it carries current or there's room and a reason. Power and GND tracks are sized for their current.
+
+Put these values in **Board Setup** itself (File → Board Setup → Design Rules → Constraints and Net Classes), not only in a `.kicad_dru` rule, and check them there before routing. With the kicad MCP, `set_design_rules` with `preset: "powerlab"` sets them, `create_netclass` the Power and GND classes, and `get_design_rules` shows what the board holds. A board whose Board Setup still shows KiCad's defaults (minimum clearance 0, track 0.2, annular ring 0.1, via 0.5 mm) isn't set up.
 
 | KiCad constraint | Value |
 |---|---|
@@ -247,7 +249,7 @@ The board minimums are the **PCBWay standard-price floor** (§2.2), so DRC only 
 
 | Net class | Track | Clearance | Via (drill/pad) | Use for |
 |---|---|---|---|---|
-| Default | 0.2 mm | 0.2 mm | 0.3 / 0.6 | Logic and low-current signals |
+| Default | 0.15 mm | 0.2 mm | 0.3 / 0.6 | Logic and low-current signals |
 | Power | sized for current (≥ 0.5 mm) | 0.3 mm | 0.4 / 0.8 | Supply rails, DC bus, phase outputs (schematic: red, thick — §1.6) |
 | GND | sized for current (≥ 0.5 mm) | 0.3 mm | 0.4 / 0.8 | All ground nets (schematic: blue, thick — §1.6) |
 | HV | sized for current | per voltage (§3.3) | 0.4 / 0.8 | Any net > 50 V |
@@ -325,6 +327,7 @@ Place block by block, in this order: fixed parts (§3.1) → power stage and hot
   - Each is a 1 mm copper dot with a 2 mm solder-mask opening and a 3 mm keepout (no silk, no copper).
   - Add a local pair diagonally across any part with pitch ≤ 0.5 mm.
 - **Test points:** on every supply rail, GND, and key signals (clocks, resets, communication buses, sense signals). Give each a silkscreen label, and put a GND test point or probe hook near the groups. The programming/debug connector (SWD, JTAG, UART boot) stays reachable with the board in its enclosure.
+  - Keep them small: SMD `METUPowerLab_TestPoints_SurfaceMounts:Pad_D1.0mm` by default; through-hole `METUPowerLab_TestPoints_ThroughHoles:Pad_D1.5mm_Drill0.8mm` for a probe tip, `Pad_D2.0mm_Drill1.0mm` for a probe hook or test loop. `Pad_D1.5mm` (SMD) only where a pogo-pin fixture asks for it. `Pad_D3.0mm_Drill1.3mm` is a wire pad (AWG18), not a test point.
 
 ### 3.3 Copper pours and high-current copper
 
@@ -336,7 +339,7 @@ Lay the copper before routing any signal, in this order:
 **Power pads get their copper first**
 - Every pad in a power path sits in a copper area sized for its current. This covers MOSFET drain/source and diode pads, inductor and transformer pads, shunts, bulk and DC-link caps, regulator input/output pads, and the power pins of connectors.
 - Draw these areas before any signal track, so the power path gets the room it needs and the signals route around it.
-- Don't leave a power pad to the router, and don't connect it with a thin track. After the fill, check every power pad: it must sit in its area, solidly connected (high-current SMD pads have no thermal relief, see below).
+- Don't leave a power pad to the router, and don't connect it with a thin track. After the fill, check every power pad: it must sit in its area, solidly connected (high-current SMD pads on power pours have no thermal relief, see below; GND pads always do).
 
 **Pour nets and power rails**
 - **Never route a pour net between pads.** This covers GND, or any net that has a plane or pour.
@@ -388,7 +391,9 @@ k = 0.048 (outer layer), 0.024 (inner layer);  width [mil] = A / (1.378 · oz)
 - Mains-connected or isolated designs follow IEC 62368-1 / IEC 60664-1 instead, which need much larger distances. Ask the user for the standard and insulation class before laying these out.
 
 **Pour quality**
-- Pads connected to pours use **thermal relief** so they can be soldered. The exception is high-current SMD pads, which connect solid.
+- Pads connected to pours use **thermal relief** so they can be soldered.
+  - **GND pours and planes always use thermal reliefs, never solid**, also for high-current GND pads: give those wider spokes (up to the pad's width) or more of them instead.
+  - The exception is high-current SMD pads on power pours (e.g. a MOSFET drain on its DC-bus copper, a switch node, a phase output), which connect solid.
 - Remove isolated copper islands, or stitch them to GND with vias. No floating copper. Minimum pour width ≥ 0.25 mm.
 - Look at the pour around every pad connection after the fill. A sliver or island between a track and a pad's clearance ring means the track doesn't enter the pad straight at its centre: reroute that end (§3.4).
 - Keep copper roughly balanced between top and bottom (pour both sides) to prevent board warp.
@@ -400,6 +405,10 @@ Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-ou
 
 **General**
 - **Keep traces short and direct. Use 45° corners; never use 90°.** No acute angles (they trap etchant), no stubs, and no dangling traces.
+- **Straight pieces only at 0°, 45° and 90°; bends at 45° or as arcs.** No straight piece runs at any other angle, not even a short one: a run between two points that aren't in line goes straight, bends and goes straight again (into the pad along its axis), never as one slanted line. **Arcs are fine anywhere and preferred on high-speed traces** (USB, Ethernet, fast clocks, differential pairs): a smooth bend keeps the trace impedance even.
+- **Same-net pads next to each other connect directly**, with the shortest straight track between them (a decoupling cap's pad to its IC pin, two parallel caps, a filter bead to its cap). Never run that connection round a part, out and back, or through a via when a direct track on the pads' layer is free.
+- **Parallel runs stay parallel.** Lines that run together (a bus, SPI, JTAG) keep one pitch and bend together at the same 45° steps; one line doesn't take a kink or a different angle where its neighbours go straight.
+- After routing, check the tracks for these (angles, corners, kinks, detours, pad entries, solid GND pads) and fix them before DRC and the review: DRC passes them. With the kicad MCP, `check_routing` lists them.
 - Don't route traces between fine-pitch pads. Leave pads straight out, then turn.
 - Enable teardrops on pad and via connections (KiCad: Edit → Edit Teardrops). They're free and make the joints stronger.
 
@@ -486,6 +495,8 @@ Do the silkscreen after the placement is finished. Don't move parts for their la
 - [ ] No tracks under inductors or transformers; switching tracks not on the same layer as high-current copper; high-speed signals without vias where possible (§3.4)
 - [ ] GND pads reach the pours (vias only at decoupling caps, plus pads still unconnected after routing); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3, §3.4)
 - [ ] Only through-hole vias, all tented (except thermal pads)
+- [ ] Straight track pieces only at 0°, 45° and 90° (arcs fine, preferred on high-speed lines), no 90° corners or kinks, same-net neighbours joined directly, parallel runs parallel; GND pads with thermal reliefs (`check_routing` clean, §3.3, §3.4)
+- [ ] Board Setup shows the lab constraints and net classes (§2.6), not KiCad's defaults; signal tracks 0.15 mm; test points small (§3.2)
 - [ ] Parts placed for short connections, on both sides where that's shorter; passives with pads facing their pins, rows in pin order, chains in signal order, no crossing airwires inside a block (§3.2)
 - [ ] Polarized parts aligned; assembly spacing, keep-outs (both sides) and fiducials per §3.2 (`check_part_spacing` clean)
 - [ ] Silkscreen clean; board info, logo and website/QR present
