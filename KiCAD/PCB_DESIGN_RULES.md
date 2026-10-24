@@ -405,7 +405,7 @@ Copper comes first (§3.3): power pads, power rails and pour nets (no GND fan-ou
 
 **General**
 - **Keep traces short and direct. Use 45° corners; never use 90°.** No acute angles (they trap etchant), no stubs, and no dangling traces.
-- **Only three directions: 0°, 45° and 90°.** No track runs at any other angle, not even a short one: a run between two points that aren't in line goes straight, bends 45° and goes straight again (into the pad along its axis), never as one slanted line.
+- **Straight pieces only at 0°, 45° and 90°; bends at 45° or as arcs.** No straight piece runs at any other angle, not even a short one: a run between two points that aren't in line goes straight, bends and goes straight again (into the pad along its axis), never as one slanted line. **Arcs are fine anywhere and preferred on high-speed traces** (USB, Ethernet, fast clocks, differential pairs): a smooth bend keeps the trace impedance even.
 - **Same-net pads next to each other connect directly**, with the shortest straight track between them (a decoupling cap's pad to its IC pin, two parallel caps, a filter bead to its cap). Never run that connection round a part, out and back, or through a via when a direct track on the pads' layer is free.
 - **Parallel runs stay parallel.** Lines that run together (a bus, SPI, JTAG) keep one pitch and bend together at the same 45° steps; one line doesn't take a kink or a different angle where its neighbours go straight.
 - After routing, check the tracks for these (angles, corners, kinks, detours, pad entries, solid GND pads) and fix them before DRC and the review: DRC passes them. With the kicad MCP, `check_routing` lists them.
@@ -495,7 +495,7 @@ Do the silkscreen after the placement is finished. Don't move parts for their la
 - [ ] No tracks under inductors or transformers; switching tracks not on the same layer as high-current copper; high-speed signals without vias where possible (§3.4)
 - [ ] GND pads reach the pours (vias only at decoupling caps, plus pads still unconnected after routing); power rails as pours, or tracks at class width; every track enters its pad straight at the centre; no slivers or islands next to pads (§3.3, §3.4)
 - [ ] Only through-hole vias, all tented (except thermal pads)
-- [ ] Tracks only at 0°, 45° and 90°, no 90° corners or kinks, same-net neighbours joined directly, parallel runs parallel; GND pads with thermal reliefs (`check_routing` clean, §3.3, §3.4)
+- [ ] Straight track pieces only at 0°, 45° and 90° (arcs fine, preferred on high-speed lines), no 90° corners or kinks, same-net neighbours joined directly, parallel runs parallel; GND pads with thermal reliefs (`check_routing` clean, §3.3, §3.4)
 - [ ] Board Setup shows the lab constraints and net classes (§2.6), not KiCad's defaults; signal tracks 0.15 mm; test points small (§3.2)
 - [ ] Parts placed for short connections, on both sides where that's shorter; passives with pads facing their pins, rows in pin order, chains in signal order, no crossing airwires inside a block (§3.2)
 - [ ] Polarized parts aligned; assembly spacing, keep-outs (both sides) and fiducials per §3.2 (`check_part_spacing` clean)
